@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Color Palette</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-stone-10 { background-color: #fbfcfb; }
+        .bg-stone-20 { background-color: #f9fafb; }
+        .bg-stone-30 { background-color: #f7f8f9; }
+        .bg-stone-40 { background-color: #f5f6f7; }
+        .bg-stone-50 { background-color: #f8f9f9; }
+        .bg-stone-60 { background-color: #f0f1f3; }
+        .bg-stone-70 { background-color: #eeeff2; }
+        .bg-stone-80 { background-color: #eceef0; }
+        .bg-stone-90 { background-color: #e9ebef; }
+        .bg-stone-100 { background-color: #f1f3f5; }
+        .bg-stone-110 { background-color: #e3e5e8; }
+        .bg-stone-120 { background-color: #e1e3e6; }
+        .bg-stone-130 { background-color: #dedfe3; }
+        .bg-stone-140 { background-color: #dbdce1; }
+        .bg-stone-150 { background-color: #d8d9df; }
+        .bg-stone-160 { background-color: #d5d6dc; }
+        .bg-stone-170 { background-color: #d2d3da; }
+        .bg-stone-180 { background-color: #d0d1d8; }
+        .bg-stone-190 { background-color: #ccd0d4; }
+        .bg-stone-200 { background-color: #e1e3e6; }
+        .bg-stone-210 { background-color: #c8ccd0; }
+        .bg-stone-220 { background-color: #c5c9ce; }
+        .bg-stone-230 { background-color: #c2c6cb; }
+        .bg-stone-240 { background-color: #bfb3c8; }
+        .bg-stone-250 { background-color: #bcb0c6; }
+        .bg-stone-260 { background-color: #b9adc4; }
+        .bg-stone-270 { background-color: #b6aac2; }
+        .bg-stone-280 { background-color: #b3a7c0; }
+        .bg-stone-290 { background-color: #b0a4be; }
+        .bg-stone-300 { background-color: #cbd3d7; }
+        .bg-stone-310 { background-color: #aab3b8; }
+        .bg-stone-320 { background-color: #a7b0b5; }
+        .bg-stone-330 { background-color: #a4adb3; }
+        .bg-stone-340 { background-color: #a1aab1; }
+        .bg-stone-350 { background-color: #9ea7af; }
+        .bg-stone-360 { background-color: #9ba4ac; }
+        .bg-stone-370 { background-color: #98a1aa; }
+        .bg-stone-380 { background-color: #959ea8; }
+        .bg-stone-390 { background-color: #929ba6; }
+        .bg-stone-400 { background-color: #94a3aa; }
+        .bg-stone-410 { background-color: #8d97a2; }
+        .bg-stone-420 { background-color: #8a949f; }
+        .bg-stone-430 { background-color: #87919d; }
+        .bg-stone-440 { background-color: #848e9b; }
+        .bg-stone-450 { background-color: #818b99; }
+        .bg-stone-460 { background-color: #7e8897; }
+        .bg-stone-470 { background-color: #7b8595; }
+        .bg-stone-480 { background-color: #788293; }
+        .bg-stone-490 { background-color: #758f91; }
+        .bg-stone-500 { background-color: #64777a; }
+        .bg-stone-510 { background-color: #708592; }
+        .bg-stone-520 { background-color: #6d8290; }
+        .bg-stone-530 { background-color: #6a7f8d; }
+        .bg-stone-540 { background-color: #677c8b; }
+        .bg-stone-550 { background-color: #647988; }
+        .bg-stone-560 { background-color: #617686; }
+        .bg-stone-570 { background-color: #5e7383; }
+        .bg-stone-580 { background-color: #5b7081; }
+        .bg-stone-590 { background-color: #586d7e; }
+        .bg-stone-600 { background-color: #47545b; }
+        .bg-stone-610 { background-color: #536c82; }
+        .bg-stone-620 { background-color: #50697f; }
+        .bg-stone-630 { background-color: #4d667d; }
+        .bg-stone-640 { background-color: #4a637a; }
+        .bg-stone-650 { background-color: #476077; }
+        .bg-stone-660 { background-color: #445d74; }
+        .bg-stone-670 { background-color: #415a71; }
+        .bg-stone-680 { background-color: #3e577e; }
+        .bg-stone-690 { background-color: #3b547b; }
+        .bg-stone-700 { background-color: #333e51; }
+        .bg-stone-710 { background-color: #364f6d; }
+        .bg-stone-720 { background-color: #33526b; }
+        .bg-stone-730 { background-color: #304d68; }
+        .bg-stone-740 { background-color: #2d4a66; }
+        .bg-stone-750 { background-color: #2a4863; }
+        .bg-stone-760 { background-color: #274560; }
+        .bg-stone-770 { background-color: #24425e; }
+        .bg-stone-780 { background-color: #213f5b; }
+        .bg-stone-790 { background-color: #1e3c58; }
+        .bg-stone-800 { background-color: #1e2836; }
+        .bg-stone-810 { background-color: #193b5d; }
+        .bg-stone-820 { background-color: #16395b; }
+        .bg-stone-830 { background-color: #133658; }
+        .bg-stone-840 { background-color: #103355; }
+        .bg-stone-850 { background-color: #0d3053; }
+        .bg-stone-860 { background-color: #0a2d50; }
+        .bg-stone-870 { background-color: #072b4e; }
+        .bg-stone-880 { background-color: #04284b; }
+        .bg-stone-890 { background-color: #012548; }
+        .bg-stone-900 { background-color: #0f1526; }
+        .bg-stone-910 { background-color: #00224a; }
+        .bg-stone-920 { background-color: #001e48; }
+        .bg-stone-930 { background-color: #001a45; }
+        .bg-stone-940 { background-color: #001642; }
+        .bg-stone-950 { background-color: #020513; }
+        .bg-stone-960 { background-color: #00113e; }
+        .bg-stone-970 { background-color: #000d3c; }
+        .bg-stone-980 { background-color: #000a39; }
+        .bg-stone-990 { background-color: #000636; }
+    </style>
+    
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-2xl font-bold mb-4">Stone Color Palette</h1>
+        <div class="grid grid-cols-5 gap-4">
+            <div class="bg-stone-10 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-10 border border-gray-300"></div>
+                    <p>Stone 10</p>
+                </div>
+            </div>
+            <div class="bg-stone-20 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-20 border border-gray-300"></div>
+                    <p>Stone 20</p>
+                </div>
+            </div>
+            <div class="bg-stone-30 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-30 border border-gray-300"></div>
+                    <p>Stone 30</p>
+                </div>
+            </div>
+            <div class="bg-stone-40 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-40 border border-gray-300"></div>
+                    <p>Stone 40</p>
+                </div>
+            </div>
+            <div class="bg-stone-50 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-50 border border-gray-300"></div>
+                    <p>Stone 50</p>
+                </div>
+            </div>
+            <div class="bg-stone-60 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-60 border border-gray-300"></div>
+                    <p>Stone 60</p>
+                </div>
+            </div>
+            <div class="bg-stone-70 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-70 border border-gray-300"></div>
+                    <p>Stone 70</p>
+                </div>
+            </div>
+            <div class="bg-stone-80 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-80 border border-gray-300"></div>
+                    <p>Stone 80</p>
+                </div>
+            </div>
+            <div class="bg-stone-90 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-90 border border-gray-300"></div>
+                    <p>Stone 90</p>
+                </div>
+            </div>
+            <div class="bg-stone-100 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-100 border border-gray-300"></div>
+                    <p>Stone 100</p>
+                </div>
+            </div>
+            <div class="bg-stone-110 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-110 border border-gray-300"></div>
+                    <p>Stone 110</p>
+                </div>
+            </div>
+            <div class="bg-stone-120 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-120 border border-gray-300"></div>
+                    <p>Stone 120</p>
+                </div>
+            </div>
+            <div class="bg-stone-130 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-130 border border-gray-300"></div>
+                    <p>Stone 130</p>
+                </div>
+            </div>
+            <div class="bg-stone-140 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-140 border border-gray-300"></div>
+                    <p>Stone 140</p>
+                </div>
+            </div>
+            <div class="bg-stone-150 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-150 border border-gray-300"></div>
+                    <p>Stone 150</p>
+                </div>
+            </div>
+            <div class="bg-stone-160 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-160 border border-gray-300"></div>
+                    <p>Stone 160</p>
+                </div>
+            </div>
+            <div class="bg-stone-170 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-170 border border-gray-300"></div>
+                    <p>Stone 170</p>
+                </div>
+            </div>
+            <div class="bg-stone-180 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-180 border border-gray-300"></div>
+                    <p>Stone 180</p>
+                </div>
+            </div>
+            <div class="bg-stone-190 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-190 border border-gray-300"></div>
+                    <p>Stone 190</p>
+                </div>
+            </div>
+            <div class="bg-stone-200 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-200 border border-gray-300"></div>
+                    <p>Stone 200</p>
+                </div>
+            </div>
+            <div class="bg-stone-210 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-210 border border-gray-300"></div>
+                    <p>Stone 210</p>
+                </div>
+            </div>
+            <div class="bg-stone-220 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-220 border border-gray-300"></div>
+                    <p>Stone 220</p>
+                </div>
+            </div>
+            <div class="bg-stone-230 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-230 border border-gray-300"></div>
+                    <p>Stone 230</p>
+                </div>
+            </div>
+            <div class="bg-stone-240 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-240 border border-gray-300"></div>
+                    <p>Stone 240</p>
+                </div>
+            </div>
+            <div class="bg-stone-250 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-250 border border-gray-300"></div>
+                    <p>Stone 250</p>
+                </div>
+            </div>
+            <div class="bg-stone-260 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-260 border border-gray-300"></div>
+                    <p>Stone 260</p>
+                </div>
+            </div>
+            <div class="bg-stone-270 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-270 border border-gray-300"></div>
+                    <p>Stone 270</p>
+                </div>
+            </div>
+            <div class="bg-stone-280 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-280 border border-gray-300"></div>
+                    <p>Stone 280</p>
+                </div>
+            </div>
+            <div class="bg-stone-290 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-290 border border-gray-300"></div>
+                    <p>Stone 290</p>
+                </div>
+            </div>
+            <div class="bg-stone-300 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-300 border border-gray-300"></div>
+                    <p>Stone 300</p>
+                </div>
+            </div>
+            <div class="bg-stone-310 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-310 border border-gray-300"></div>
+                    <p>Stone 310</p>
+                </div>
+            </div>
+            <div class="bg-stone-320 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-320 border border-gray-300"></div>
+                    <p>Stone 320</p>
+                </div>
+            </div>
+            <div class="bg-stone-330 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-330 border border-gray-300"></div>
+                    <p>Stone 330</p>
+                </div>
+            </div>
+            <div class="bg-stone-340 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-340 border border-gray-300"></div>
+                    <p>Stone 340</p>
+                </div>
+            </div>
+            <div class="bg-stone-350 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-350 border border-gray-300"></div>
+                    <p>Stone 350</p>
+                </div>
+            </div>
+            <div class="bg-stone-360 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-360 border border-gray-300"></div>
+                    <p>Stone 360</p>
+                </div>
+            </div>
+            <div class="bg-stone-370 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-370 border border-gray-300"></div>
+                    <p>Stone 370</p>
+                </div>
+            </div>
+            <div class="bg-stone-380 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-380 border border-gray-300"></div>
+                    <p>Stone 380</p>
+                </div>
+            </div>
+            <div class="bg-stone-390 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-390 border border-gray-300"></div>
+                    <p>Stone 390</p>
+                </div>
+            </div>
+            <div class="bg-stone-400 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-400 border border-gray-300"></div>
+                    <p>Stone 400</p>
+                </div>
+            </div>
+            <div class="bg-stone-410 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-410 border border-gray-300"></div>
+                    <p>Stone 410</p>
+                </div>
+            </div>
+            <div class="bg-stone-420 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-420 border border-gray-300"></div>
+                    <p>Stone 420</p>
+                </div>
+            </div>
+            <div class="bg-stone-430 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-430 border border-gray-300"></div>
+                    <p>Stone 430</p>
+                </div>
+            </div>
+            <div class="bg-stone-440 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-440 border border-gray-300"></div>
+                    <p>Stone 440</p>
+                </div>
+            </div>
+            <div class="bg-stone-450 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-450 border border-gray-300"></div>
+                    <p>Stone 450</p>
+                </div>
+            </div>
+            <div class="bg-stone-460 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-460 border border-gray-300"></div>
+                    <p>Stone 460</p>
+                </div>
+            </div>
+            <div class="bg-stone-470 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-470 border border-gray-300"></div>
+                    <p>Stone 470</p>
+                </div>
+            </div>
+            <div class="bg-stone-480 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-480 border border-gray-300"></div>
+                    <p>Stone 480</p>
+                </div>
+            </div>
+            <div class="bg-stone-490 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-490 border border-gray-300"></div>
+                    <p>Stone 490</p>
+                </div>
+            </div>
+            <div class="bg-stone-500 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-500 border border-gray-300"></div>
+                    <p>Stone 500</p>
+                </div>
+            </div>
+            <div class="bg-stone-510 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-510 border border-gray-300"></div>
+                    <p>Stone 510</p>
+                </div>
+            </div>
+            <div class="bg-stone-520 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-520 border border-gray-300"></div>
+                    <p>Stone 520</p>
+                </div>
+            </div>
+            <div class="bg-stone-530 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-530 border border-gray-300"></div>
+                    <p>Stone 530</p>
+                </div>
+            </div>
+            <div class="bg-stone-540 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-540 border border-gray-300"></div>
+                    <p>Stone 540</p>
+                </div>
+            </div>
+            <div class="bg-stone-550 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-550 border border-gray-300"></div>
+                    <p>Stone 550</p>
+                </div>
+            </div>
+            <div class="bg-stone-560 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-560 border border-gray-300"></div>
+                    <p>Stone 560</p>
+                </div>
+            </div>
+            <div class="bg-stone-570 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-570 border border-gray-300"></div>
+                    <p>Stone 570</p>
+                </div>
+            </div>
+            <div class="bg-stone-580 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-580 border border-gray-300"></div>
+                    <p>Stone 580</p>
+                </div>
+            </div>
+            <div class="bg-stone-590 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-590 border border-gray-300"></div>
+                    <p>Stone 590</p>
+                </div>
+            </div>
+            <div class="bg-stone-600 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-600 border border-gray-300"></div>
+                    <p>Stone 600</p>
+                </div>
+            </div>
+            <div class="bg-stone-610 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-610 border border-gray-300"></div>
+                    <p>Stone 610</p>
+                </div>
+            </div>
+            <div class="bg-stone-620 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-620 border border-gray-300"></div>
+                    <p>Stone 620</p>
+                </div>
+            </div>
+            <div class="bg-stone-630 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-630 border border-gray-300"></div>
+                    <p>Stone 630</p>
+                </div>
+            </div>
+            <div class="bg-stone-640 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-640 border border-gray-300"></div>
+                    <p>Stone 640</p>
+                </div>
+            </div>
+            <div class="bg-stone-650 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-650 border border-gray-300"></div>
+                    <p>Stone 650</p>
+                </div>
+            </div>
+            <div class="bg-stone-660 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-660 border border-gray-300"></div>
+                    <p>Stone 660</p>
+                </div>
+            </div>
+            <div class="bg-stone-670 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-670 border border-gray-300"></div>
+                    <p>Stone 670</p>
+                </div>
+            </div>
+            <div class="bg-stone-680 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-680 border border-gray-300"></div>
+                    <p>Stone 680</p>
+                </div>
+            </div>
+            <div class="bg-stone-690 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-690 border border-gray-300"></div>
+                    <p>Stone 690</p>
+                </div>
+            </div>
+            <div class="bg-stone-700 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-700 border border-gray-300"></div>
+                    <p>Stone 700</p>
+                </div>
+            </div>
+            <div class="bg-stone-710 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-710 border border-gray-300"></div>
+                    <p>Stone 710</p>
+                </div>
+            </div>
+            <div class="bg-stone-720 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-720 border border-gray-300"></div>
+                    <p>Stone 720</p>
+                </div>
+            </div>
+            <div class="bg-stone-730 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-730 border border-gray-300"></div>
+                    <p>Stone 730</p>
+                </div>
+            </div>
+            <div class="bg-stone-740 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-740 border border-gray-300"></div>
+                    <p>Stone 740</p>
+                </div>
+            </div>
+            <div class="bg-stone-750 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-750 border border-gray-300"></div>
+                    <p>Stone 750</p>
+                </div>
+            </div>
+            <div class="bg-stone-760 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-760 border border-gray-300"></div>
+                    <p>Stone 760</p>
+                </div>
+            </div>
+            <div class="bg-stone-770 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-770 border border-gray-300"></div>
+                    <p>Stone 770</p>
+                </div>
+            </div>
+            <div class="bg-stone-780 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-780 border border-gray-300"></div>
+                    <p>Stone 780</p>
+                </div>
+            </div>
+            <div class="bg-stone-790 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-790 border border-gray-300"></div>
+                    <p>Stone 790</p>
+                </div>
+            </div>
+            <div class="bg-stone-800 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-800 border border-gray-300"></div>
+                    <p>Stone 800</p>
+                </div>
+            </div>
+            <div class="bg-stone-810 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-810 border border-gray-300"></div>
+                    <p>Stone 810</p>
+                </div>
+            </div>
+            <div class="bg-stone-820 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-820 border border-gray-300"></div>
+                    <p>Stone 820</p>
+                </div>
+            </div>
+            <div class="bg-stone-830 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-830 border border-gray-300"></div>
+                    <p>Stone 830</p>
+                </div>
+            </div>
+            <div class="bg-stone-840 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-840 border border-gray-300"></div>
+                    <p>Stone 840</p>
+                </div>
+            </div>
+            <div class="bg-stone-850 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-850 border border-gray-300"></div>
+                    <p>Stone 850</p>
+                </div>
+            </div>
+            <div class="bg-stone-860 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-860 border border-gray-300"></div>
+                    <p>Stone 860</p>
+                </div>
+            </div>
+            <div class="bg-stone-870 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-870 border border-gray-300"></div>
+                    <p>Stone 870</p>
+                </div>
+            </div>
+            <div class="bg-stone-880 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-880 border border-gray-300"></div>
+                    <p>Stone 880</p>
+                </div>
+            </div>
+            <div class="bg-stone-890 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-890 border border-gray-300"></div>
+                    <p>Stone 890</p>
+                </div>
+            </div>
+            <div class="bg-stone-900 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-900 border border-gray-300"></div>
+                    <p>Stone 900</p>
+                </div>
+            </div>
+            <div class="bg-stone-910 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-910 border border-gray-300"></div>
+                    <p>Stone 910</p>
+                </div>
+            </div>
+            <div class="bg-stone-920 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-920 border border-gray-300"></div>
+                    <p>Stone 920</p>
+                </div>
+            </div>
+            <div class="bg-stone-930 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-930 border border-gray-300"></div>
+                    <p>Stone 930</p>
+                </div>
+            </div>
+            <div class="bg-stone-940 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-940 border border-gray-300"></div>
+                    <p>Stone 940</p>
+                </div>
+            </div>
+            <div class="bg-stone-950 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-950 border border-gray-300"></div>
+                    <p>Stone 950</p>
+                </div>
+            </div>
+            <div class="bg-stone-960 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-960 border border-gray-300"></div>
+                    <p>Stone 960</p>
+                </div>
+            </div>
+            <div class="bg-stone-970 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-970 border border-gray-300"></div>
+                    <p>Stone 970</p>
+                </div>
+            </div>
+            <div class="bg-stone-980 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-980 border border-gray-300"></div>
+                    <p>Stone 980</p>
+                </div>
+            </div>
+            <div class="bg-stone-990 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-stone-990 border border-gray-300"></div>
+                    <p>Stone 990</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

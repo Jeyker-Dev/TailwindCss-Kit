@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slate Color Palette</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-slate-10 { background-color: #fbfdfe; }
+        .bg-slate-20 { background-color: #f9fbfd; }
+        .bg-slate-30 { background-color: #f7f9fb; }
+        .bg-slate-40 { background-color: #f5f7fa; }
+        .bg-slate-50 { background-color: #f8fafc; }
+        .bg-slate-60 { background-color: #f0f2f6; }
+        .bg-slate-70 { background-color: #eef0f4; }
+        .bg-slate-80 { background-color: #eceef3; }
+        .bg-slate-90 { background-color: #e9ecf1; }
+        .bg-slate-100 { background-color: #f1f5f9; }
+        .bg-slate-110 { background-color: #e3e7ed; }
+        .bg-slate-120 { background-color: #e1e4eb; }
+        .bg-slate-130 { background-color: #dee2e9; }
+        .bg-slate-140 { background-color: #dbe0e7; }
+        .bg-slate-150 { background-color: #d8dde5; }
+        .bg-slate-160 { background-color: #d5dbe3; }
+        .bg-slate-170 { background-color: #d2d8e1; }
+        .bg-slate-180 { background-color: #d0d6df; }
+        .bg-slate-190 { background-color: #cdd3dd; }
+        .bg-slate-200 { background-color: #e2e8f0; }
+        .bg-slate-210 { background-color: #c8cfd9; }
+        .bg-slate-220 { background-color: #c5ccd7; }
+        .bg-slate-230 { background-color: #c2cad5; }
+        .bg-slate-240 { background-color: #bfc7d3; }
+        .bg-slate-250 { background-color: #bcc5d1; }
+        .bg-slate-260 { background-color: #b9c2cf; }
+        .bg-slate-270 { background-color: #b6c0cd; }
+        .bg-slate-280 { background-color: #b3bdcb; }
+        .bg-slate-290 { background-color: #b0bbc9; }
+        .bg-slate-300 { background-color: #cbd5e1; }
+        .bg-slate-310 { background-color: #aab7c5; }
+        .bg-slate-320 { background-color: #a7b4c3; }
+        .bg-slate-330 { background-color: #a4b2c1; }
+        .bg-slate-340 { background-color: #a1afbf; }
+        .bg-slate-350 { background-color: #9eacbd; }
+        .bg-slate-360 { background-color: #9ba9bb; }
+        .bg-slate-370 { background-color: #98a7b9; }
+        .bg-slate-380 { background-color: #95a4b7; }
+        .bg-slate-390 { background-color: #92a2b5; }
+        .bg-slate-400 { background-color: #94a3b8; }
+        .bg-slate-410 { background-color: #8d9eb1; }
+        .bg-slate-420 { background-color: #8a9caf; }
+        .bg-slate-430 { background-color: #8799ad; }
+        .bg-slate-440 { background-color: #8497ab; }
+        .bg-slate-450 { background-color: #8194a9; }
+        .bg-slate-460 { background-color: #7e91a7; }
+        .bg-slate-470 { background-color: #7b8fa5; }
+        .bg-slate-480 { background-color: #788ca3; }
+        .bg-slate-490 { background-color: #758aa1; }
+        .bg-slate-500 { background-color: #64748b; }
+        .bg-slate-510 { background-color: #70869d; }
+        .bg-slate-520 { background-color: #6d839b; }
+        .bg-slate-530 { background-color: #6a8099; }
+        .bg-slate-540 { background-color: #677e97; }
+        .bg-slate-550 { background-color: #647b95; }
+        .bg-slate-560 { background-color: #617893; }
+        .bg-slate-570 { background-color: #5e7691; }
+        .bg-slate-580 { background-color: #5b738f; }
+        .bg-slate-590 { background-color: #58718d; }
+        .bg-slate-600 { background-color: #475569; }
+        .bg-slate-610 { background-color: #536d89; }
+        .bg-slate-620 { background-color: #506a87; }
+        .bg-slate-630 { background-color: #4d6885; }
+        .bg-slate-640 { background-color: #4a6583; }
+        .bg-slate-650 { background-color: #476281; }
+        .bg-slate-660 { background-color: #445f7f; }
+        .bg-slate-670 { background-color: #415d7d; }
+        .bg-slate-680 { background-color: #3e5a7b; }
+        .bg-slate-690 { background-color: #3b5879; }
+        .bg-slate-700 { background-color: #334155; }
+        .bg-slate-710 { background-color: #365475; }
+        .bg-slate-720 { background-color: #335273; }
+        .bg-slate-730 { background-color: #304f71; }
+        .bg-slate-740 { background-color: #2d4c6f; }
+        .bg-slate-750 { background-color: #2a4a6d; }
+        .bg-slate-760 { background-color: #27476b; }
+        .bg-slate-770 { background-color: #244569; }
+        .bg-slate-780 { background-color: #214267; }
+        .bg-slate-790 { background-color: #1e4065; }
+        .bg-slate-800 { background-color: #1e293b; }
+        .bg-slate-810 { background-color: #193c61; }
+        .bg-slate-820 { background-color: #163a5f; }
+        .bg-slate-830 { background-color: #13375d; }
+        .bg-slate-840 { background-color: #10345b; }
+        .bg-slate-850 { background-color: #0d3259; }
+        .bg-slate-860 { background-color: #0a2f57; }
+        .bg-slate-870 { background-color: #072d55; }
+        .bg-slate-880 { background-color: #042a53; }
+        .bg-slate-890 { background-color: #012851; }
+        .bg-slate-900 { background-color: #0f172a; }
+        .bg-slate-910 { background-color: #00234d; }
+        .bg-slate-920 { background-color: #001f4b; }
+        .bg-slate-930 { background-color: #001c49; }
+        .bg-slate-940 { background-color: #001846; }
+        .bg-slate-950 { background-color: #020617; }
+        .bg-slate-960 { background-color: #001342; }
+        .bg-slate-970 { background-color: #000f40; }
+        .bg-slate-980 { background-color: #000c3e; }
+        .bg-slate-990 { background-color: #00083c; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-2xl font-bold mb-4">Slate Color Palette</h1>
+        <div class="grid grid-cols-5 gap-4">
+            <div class="bg-slate-10 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-10 border border-gray-300"></div>
+                    <p>Slate 10</p>
+                </div>
+            </div>
+            <div class="bg-slate-20 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-20 border border-gray-300"></div>
+                    <p>Slate 20</p>
+                </div>
+            </div>
+            <div class="bg-slate-30 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-30 border border-gray-300"></div>
+                    <p>Slate 30</p>
+                </div>
+            </div>
+            <div class="bg-slate-40 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-40 border border-gray-300"></div>
+                    <p>Slate 40</p>
+                </div>
+            </div>
+            <div class="bg-slate-50 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-50 border border-gray-300"></div>
+                    <p>Slate 50</p>
+                </div>
+            </div>
+            <div class="bg-slate-60 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-60 border border-gray-300"></div>
+                    <p>Slate 60</p>
+                </div>
+            </div>
+            <div class="bg-slate-70 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-70 border border-gray-300"></div>
+                    <p>Slate 70</p>
+                </div>
+            </div>
+            <div class="bg-slate-80 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-80 border border-gray-300"></div>
+                    <p>Slate 80</p>
+                </div>
+            </div>
+            <div class="bg-slate-90 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-90 border border-gray-300"></div>
+                    <p>Slate 90</p>
+                </div>
+            </div>
+            <div class="bg-slate-100 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-100 border border-gray-300"></div>
+                    <p>Slate 100</p>
+                </div>
+            </div>
+            <div class="bg-slate-110 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-110 border border-gray-300"></div>
+                    <p>Slate 110</p>
+                </div>
+            </div>
+            <div class="bg-slate-120 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-120 border border-gray-300"></div>
+                    <p>Slate 120</p>
+                </div>
+            </div>
+            <div class="bg-slate-130 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-130 border border-gray-300"></div>
+                    <p>Slate 130</p>
+                </div>
+            </div>
+            <div class="bg-slate-140 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-140 border border-gray-300"></div>
+                    <p>Slate 140</p>
+                </div>
+            </div>
+            <div class="bg-slate-150 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-150 border border-gray-300"></div>
+                    <p>Slate 150</p>
+                </div>
+            </div>
+            <div class="bg-slate-160 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-160 border border-gray-300"></div>
+                    <p>Slate 160</p>
+                </div>
+            </div>
+            <div class="bg-slate-170 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-170 border border-gray-300"></div>
+                    <p>Slate 170</p>
+                </div>
+            </div>
+            <div class="bg-slate-180 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-180 border border-gray-300"></div>
+                    <p>Slate 180</p>
+                </div>
+            </div>
+            <div class="bg-slate-190 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-190 border border-gray-300"></div>
+                    <p>Slate 190</p>
+                </div>
+            </div>
+            <div class="bg-slate-200 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-200 border border-gray-300"></div>
+                    <p>Slate 200</p>
+                </div>
+            </div>
+            <div class="bg-slate-210 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-210 border border-gray-300"></div>
+                    <p>Slate 210</p>
+                </div>
+            </div>
+            <div class="bg-slate-220 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-220 border border-gray-300"></div>
+                    <p>Slate 220</p>
+                </div>
+            </div>
+            <div class="bg-slate-230 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-230 border border-gray-300"></div>
+                    <p>Slate 230</p>
+                </div>
+            </div>
+            <div class="bg-slate-240 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-240 border border-gray-300"></div>
+                    <p>Slate 240</p>
+                </div>
+            </div>
+            <div class="bg-slate-250 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-250 border border-gray-300"></div>
+                    <p>Slate 250</p>
+                </div>
+            </div>
+            <div class="bg-slate-260 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-260 border border-gray-300"></div>
+                    <p>Slate 260</p>
+                </div>
+            </div>
+            <div class="bg-slate-270 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-270 border border-gray-300"></div>
+                    <p>Slate 270</p>
+                </div>
+            </div>
+            <div class="bg-slate-280 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-280 border border-gray-300"></div>
+                    <p>Slate 280</p>
+                </div>
+            </div>
+            <div class="bg-slate-290 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-290 border border-gray-300"></div>
+                    <p>Slate 290</p>
+                </div>
+            </div>
+            <div class="bg-slate-300 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-300 border border-gray-300"></div>
+                    <p>Slate 300</p>
+                </div>
+            </div>
+            <div class="bg-slate-310 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-310 border border-gray-300"></div>
+                    <p>Slate 310</p>
+                </div>
+            </div>
+            <div class="bg-slate-320 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-320 border border-gray-300"></div>
+                    <p>Slate 320</p>
+                </div>
+            </div>
+            <div class="bg-slate-330 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-330 border border-gray-300"></div>
+                    <p>Slate 330</p>
+                </div>
+            </div>
+            <div class="bg-slate-340 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-340 border border-gray-300"></div>
+                    <p>Slate 340</p>
+                </div>
+            </div>
+            <div class="bg-slate-350 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-350 border border-gray-300"></div>
+                    <p>Slate 350</p>
+                </div>
+            </div>
+            <div class="bg-slate-360 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-360 border border-gray-300"></div>
+                    <p>Slate 360</p>
+                </div>
+            </div>
+            <div class="bg-slate-370 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-370 border border-gray-300"></div>
+                    <p>Slate 370</p>
+                </div>
+            </div>
+            <div class="bg-slate-380 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-380 border border-gray-300"></div>
+                    <p>Slate 380</p>
+                </div>
+            </div>
+            <div class="bg-slate-390 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-390 border border-gray-300"></div>
+                    <p>Slate 390</p>
+                </div>
+            </div>
+            <div class="bg-slate-400 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-400 border border-gray-300"></div>
+                    <p>Slate 400</p>
+                </div>
+            </div>
+            <div class="bg-slate-410 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-410 border border-gray-300"></div>
+                    <p>Slate 410</p>
+                </div>
+            </div>
+            <div class="bg-slate-420 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-420 border border-gray-300"></div>
+                    <p>Slate 420</p>
+                </div>
+            </div>
+            <div class="bg-slate-430 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-430 border border-gray-300"></div>
+                    <p>Slate 430</p>
+                </div>
+            </div>
+            <div class="bg-slate-440 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-440 border border-gray-300"></div>
+                    <p>Slate 440</p>
+                </div>
+            </div>
+            <div class="bg-slate-450 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-450 border border-gray-300"></div>
+                    <p>Slate 450</p>
+                </div>
+            </div>
+            <div class="bg-slate-460 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-460 border border-gray-300"></div>
+                    <p>Slate 460</p>
+                </div>
+            </div>
+            <div class="bg-slate-470 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-470 border border-gray-300"></div>
+                    <p>Slate 470</p>
+                </div>
+            </div>
+            <div class="bg-slate-480 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-480 border border-gray-300"></div>
+                    <p>Slate 480</p>
+                </div>
+            </div>
+            <div class="bg-slate-490 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-490 border border-gray-300"></div>
+                    <p>Slate 490</p>
+                </div>
+            </div>
+            <div class="bg-slate-500 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-500 border border-gray-300"></div>
+                    <p>Slate 500</p>
+                </div>
+            </div>
+            <div class="bg-slate-510 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-510 border border-gray-300"></div>
+                    <p>Slate 510</p>
+                </div>
+            </div>
+            <div class="bg-slate-520 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-520 border border-gray-300"></div>
+                    <p>Slate 520</p>
+                </div>
+            </div>
+            <div class="bg-slate-530 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-530 border border-gray-300"></div>
+                    <p>Slate 530</p>
+                </div>
+            </div>
+            <div class="bg-slate-540 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-540 border border-gray-300"></div>
+                    <p>Slate 540</p>
+                </div>
+            </div>
+            <div class="bg-slate-550 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-550 border border-gray-300"></div>
+                    <p>Slate 550</p>
+                </div>
+            </div>
+            <div class="bg-slate-560 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-560 border border-gray-300"></div>
+                    <p>Slate 560</p>
+                </div>
+            </div>
+            <div class="bg-slate-570 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-570 border border-gray-300"></div>
+                    <p>Slate 570</p>
+                </div>
+            </div>
+            <div class="bg-slate-580 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-580 border border-gray-300"></div>
+                    <p>Slate 580</p>
+                </div>
+            </div>
+            <div class="bg-slate-590 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-590 border border-gray-300"></div>
+                    <p>Slate 590</p>
+                </div>
+            </div>
+            <div class="bg-slate-600 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-600 border border-gray-300"></div>
+                    <p>Slate 600</p>
+                </div>
+            </div>
+            <div class="bg-slate-610 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-610 border border-gray-300"></div>
+                    <p>Slate 610</p>
+                </div>
+            </div>
+            <div class="bg-slate-620 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-620 border border-gray-300"></div>
+                    <p>Slate 620</p>
+                </div>
+            </div>
+            <div class="bg-slate-630 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-630 border border-gray-300"></div>
+                    <p>Slate 630</p>
+                </div>
+            </div>
+            <div class="bg-slate-640 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-640 border border-gray-300"></div>
+                    <p>Slate 640</p>
+                </div>
+            </div>
+            <div class="bg-slate-650 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-650 border border-gray-300"></div>
+                    <p>Slate 650</p>
+                </div>
+            </div>
+            <div class="bg-slate-660 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-660 border border-gray-300"></div>
+                    <p>Slate 660</p>
+                </div>
+            </div>
+            <div class="bg-slate-670 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-670 border border-gray-300"></div>
+                    <p>Slate 670</p>
+                </div>
+            </div>
+            <div class="bg-slate-680 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-680 border border-gray-300"></div>
+                    <p>Slate 680</p>
+                </div>
+            </div>
+            <div class="bg-slate-690 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-690 border border-gray-300"></div>
+                    <p>Slate 690</p>
+                </div>
+            </div>
+            <div class="bg-slate-700 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-700 border border-gray-300"></div>
+                    <p>Slate 700</p>
+                </div>
+            </div>
+            <div class="bg-slate-710 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-710 border border-gray-300"></div>
+                    <p>Slate 710</p>
+                </div>
+            </div>
+            <div class="bg-slate-720 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-720 border border-gray-300"></div>
+                    <p>Slate 720</p>
+                </div>
+            </div>
+            <div class="bg-slate-730 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-730 border border-gray-300"></div>
+                    <p>Slate 730</p>
+                </div>
+            </div>
+            <div class="bg-slate-740 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-740 border border-gray-300"></div>
+                    <p>Slate 740</p>
+                </div>
+            </div>
+            <div class="bg-slate-750 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-750 border border-gray-300"></div>
+                    <p>Slate 750</p>
+                </div>
+            </div>
+            <div class="bg-slate-760 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-760 border border-gray-300"></div>
+                    <p>Slate 760</p>
+                </div>
+            </div>
+            <div class="bg-slate-770 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-770 border border-gray-300"></div>
+                    <p>Slate 770</p>
+                </div>
+            </div>
+            <div class="bg-slate-780 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-780 border border-gray-300"></div>
+                    <p>Slate 780</p>
+                </div>
+            </div>
+            <div class="bg-slate-790 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-790 border border-gray-300"></div>
+                    <p>Slate 790</p>
+                </div>
+            </div>
+            <div class="bg-slate-800 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-800 border border-gray-300"></div>
+                    <p>Slate 800</p>
+                </div>
+            </div>
+            <div class="bg-slate-810 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-810 border border-gray-300"></div>
+                    <p>Slate 810</p>
+                </div>
+            </div>
+            <div class="bg-slate-820 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-820 border border-gray-300"></div>
+                    <p>Slate 820</p>
+                </div>
+            </div>
+            <div class="bg-slate-830 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-830 border border-gray-300"></div>
+                    <p>Slate 830</p>
+                </div>
+            </div>
+            <div class="bg-slate-840 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-840 border border-gray-300"></div>
+                    <p>Slate 840</p>
+                </div>
+            </div>
+            <div class="bg-slate-850 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-850 border border-gray-300"></div>
+                    <p>Slate 850</p>
+                </div>
+            </div>
+            <div class="bg-slate-860 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-860 border border-gray-300"></div>
+                    <p>Slate 860</p>
+                </div>
+            </div>
+            <div class="bg-slate-870 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-870 border border-gray-300"></div>
+                    <p>Slate 870</p>
+                </div>
+            </div>
+            <div class="bg-slate-880 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-880 border border-gray-300"></div>
+                    <p>Slate 880</p>
+                </div>
+            </div>
+            <div class="bg-slate-890 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-890 border border-gray-300"></div>
+                    <p>Slate 890</p>
+                </div>
+            </div>
+            <div class="bg-slate-900 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-900 border border-gray-300"></div>
+                    <p>Slate 900</p>
+                </div>
+            </div>
+            <div class="bg-slate-910 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-910 border border-gray-300"></div>
+                    <p>Slate 910</p>
+                </div>
+            </div>
+            <div class="bg-slate-920 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-920 border border-gray-300"></div>
+                    <p>Slate 920</p>
+                </div>
+            </div>
+            <div class="bg-slate-930 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-930 border border-gray-300"></div>
+                    <p>Slate 930</p>
+                </div>
+            </div>
+            <div class="bg-slate-940 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-940 border border-gray-300"></div>
+                    <p>Slate 940</p>
+                </div>
+            </div>
+            <div class="bg-slate-950 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-950 border border-gray-300"></div>
+                    <p>Slate 950</p>
+                </div>
+            </div>
+            <div class="bg-slate-960 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-960 border border-gray-300"></div>
+                    <p>Slate 960</p>
+                </div>
+            </div>
+            <div class="bg-slate-970 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-970 border border-gray-300"></div>
+                    <p>Slate 970</p>
+                </div>
+            </div>
+            <div class="bg-slate-980 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-980 border border-gray-300"></div>
+                    <p>Slate 980</p>
+                </div>
+            </div>
+            <div class="bg-slate-990 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-slate-990 border border-gray-300"></div>
+                    <p>Slate 990</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

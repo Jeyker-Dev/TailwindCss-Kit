@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gray Color Palette</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-gray-10 { background-color: #fbfbfb; }
+        .bg-gray-20 { background-color: #fafafa; }
+        .bg-gray-30 { background-color: #f8f9fa; }
+        .bg-gray-40 { background-color: #f7f7f8; }
+        .bg-gray-50 { background-color: #f9fafb; }
+        .bg-gray-60 { background-color: #f4f5f6; }
+        .bg-gray-70 { background-color: #f2f2f3; }
+        .bg-gray-80 { background-color: #f1f1f2; }
+        .bg-gray-90 { background-color: #eff0f1; }
+        .bg-gray-100 { background-color: #f3f4f6; }
+        .bg-gray-110 { background-color: #eaeaec; }
+        .bg-gray-120 { background-color: #e9e9ea; }
+        .bg-gray-130 { background-color: #e7e8e9; }
+        .bg-gray-140 { background-color: #e6e7e8; }
+        .bg-gray-150 { background-color: #e4e5e6; }
+        .bg-gray-160 { background-color: #e2e3e4; }
+        .bg-gray-170 { background-color: #e1e2e3; }
+        .bg-gray-180 { background-color: #dfe0e1; }
+        .bg-gray-190 { background-color: #dddedf; }
+        .bg-gray-200 { background-color: #e5e7eb; }
+        .bg-gray-210 { background-color: #dadbdd; }
+        .bg-gray-220 { background-color: #d8d9db; }
+        .bg-gray-230 { background-color: #d7d8da; }
+        .bg-gray-240 { background-color: #d5d6d8; }
+        .bg-gray-250 { background-color: #d3d4d6; }
+        .bg-gray-260 { background-color: #d2d3d5; }
+        .bg-gray-270 { background-color: #d0d1d3; }
+        .bg-gray-280 { background-color: #ced0d2; }
+        .bg-gray-290 { background-color: #ccced0; }
+        .bg-gray-300 { background-color: #d1d5db; }
+        .bg-gray-310 { background-color: #c6c8cc; }
+        .bg-gray-320 { background-color: #c4c6ca; }
+        .bg-gray-330 { background-color: #c3c5c9; }
+        .bg-gray-340 { background-color: #c1c3c7; }
+        .bg-gray-350 { background-color: #bfc1c5; }
+        .bg-gray-360 { background-color: #bec0c4; }
+        .bg-gray-370 { background-color: #bcbec2; }
+        .bg-gray-380 { background-color: #babcc0; }
+        .bg-gray-390 { background-color: #b9bbbf; }
+        .bg-gray-400 { background-color: #9ca3af; }
+        .bg-gray-410 { background-color: #b4b7bb; }
+        .bg-gray-420 { background-color: #b3b5b9; }
+        .bg-gray-430 { background-color: #b1b3b7; }
+        .bg-gray-440 { background-color: #afb1b5; }
+        .bg-gray-450 { background-color: #adafb3; }
+        .bg-gray-460 { background-color: #acadf1; }
+        .bg-gray-470 { background-color: #aaabb1; }
+        .bg-gray-480 { background-color: #a8a9af; }
+        .bg-gray-490 { background-color: #a7a8ae; }
+        .bg-gray-500 { background-color: #6b7280; }
+        .bg-gray-510 { background-color: #a3a5aa; }
+        .bg-gray-520 { background-color: #a1a3a8; }
+        .bg-gray-530 { background-color: #a0a2a7; }
+        .bg-gray-540 { background-color: #9ea0a5; }
+        .bg-gray-550 { background-color: #9c9ea3; }
+        .bg-gray-560 { background-color: #9a9ca1; }
+        .bg-gray-570 { background-color: #999ba0; }
+        .bg-gray-580 { background-color: #97999e; }
+        .bg-gray-590 { background-color: #95979c; }
+        .bg-gray-600 { background-color: #4b5563; }
+        .bg-gray-610 { background-color: #92959a; }
+        .bg-gray-620 { background-color: #919399; }
+        .bg-gray-630 { background-color: #8f9197; }
+        .bg-gray-640 { background-color: #8d8f95; }
+        .bg-gray-650 { background-color: #8b8d93; }
+        .bg-gray-660 { background-color: #8a8c92; }
+        .bg-gray-670 { background-color: #888a90; }
+        .bg-gray-680 { background-color: #86888e; }
+        .bg-gray-690 { background-color: #85878d; }
+        .bg-gray-700 { background-color: #374151; }
+        .bg-gray-710 { background-color: #82848a; }
+        .bg-gray-720 { background-color: #818389; }
+        .bg-gray-730 { background-color: #7f8187; }
+        .bg-gray-740 { background-color: #7d7f85; }
+        .bg-gray-750 { background-color: #7b7d83; }
+        .bg-gray-760 { background-color: #7a7c82; }
+        .bg-gray-770 { background-color: #787a80; }
+        .bg-gray-780 { background-color: #76787e; }
+        .bg-gray-790 { background-color: #75777d; }
+        .bg-gray-800 { background-color: #1f2937; }
+        .bg-gray-810 { background-color: #727479; }
+        .bg-gray-820 { background-color: #717378; }
+        .bg-gray-830 { background-color: #6f7176; }
+        .bg-gray-840 { background-color: #6d6f74; }
+        .bg-gray-850 { background-color: #6b6d72; }
+        .bg-gray-860 { background-color: #6a6c71; }
+        .bg-gray-870 { background-color: #686a6f; }
+        .bg-gray-880 { background-color: #66686d; }
+        .bg-gray-890 { background-color: #65676c; }
+        .bg-gray-900 { background-color: #111827; }
+        .bg-gray-910 { background-color: #616367; }
+        .bg-gray-920 { background-color: #5f6165; }
+        .bg-gray-930 { background-color: #5e6064; }
+        .bg-gray-940 { background-color: #5c5e62; }
+        .bg-gray-950 { background-color: #030712; }
+        .bg-gray-960 { background-color: #585a5e; }
+        .bg-gray-970 { background-color: #56585c; }
+        .bg-gray-980 { background-color: #54565a; }
+        .bg-gray-990 { background-color: #535559; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-2xl font-bold mb-4">Gray Color Palette</h1>
+        <div class="grid grid-cols-5 gap-4">
+            <div class="bg-gray-10 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-10 border border-gray-300"></div>
+                    <p>Gray 10</p>
+                </div>
+            </div>
+            <div class="bg-gray-20 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-20 border border-gray-300"></div>
+                    <p>Gray 20</p>
+                </div>
+            </div>
+            <div class="bg-gray-30 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-30 border border-gray-300"></div>
+                    <p>Gray 30</p>
+                </div>
+            </div>
+            <div class="bg-gray-40 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-40 border border-gray-300"></div>
+                    <p>Gray 40</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-50 border border-gray-300"></div>
+                    <p>Gray 50</p>
+                </div>
+            </div>
+            <div class="bg-gray-60 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-60 border border-gray-300"></div>
+                    <p>Gray 60</p>
+                </div>
+            </div>
+            <div class="bg-gray-70 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-70 border border-gray-300"></div>
+                    <p>Gray 70</p>
+                </div>
+            </div>
+            <div class="bg-gray-80 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-80 border border-gray-300"></div>
+                    <p>Gray 80</p>
+                </div>
+            </div>
+            <div class="bg-gray-90 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-90 border border-gray-300"></div>
+                    <p>Gray 90</p>
+                </div>
+            </div>
+            <div class="bg-gray-100 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-100 border border-gray-300"></div>
+                    <p>Gray 100</p>
+                </div>
+            </div>
+            <div class="bg-gray-110 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-110 border border-gray-300"></div>
+                    <p>Gray 110</p>
+                </div>
+            </div>
+            <div class="bg-gray-120 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-120 border border-gray-300"></div>
+                    <p>Gray 120</p>
+                </div>
+            </div>
+            <div class="bg-gray-130 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-130 border border-gray-300"></div>
+                    <p>Gray 130</p>
+                </div>
+            </div>
+            <div class="bg-gray-140 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-140 border border-gray-300"></div>
+                    <p>Gray 140</p>
+                </div>
+            </div>
+            <div class="bg-gray-150 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-150 border border-gray-300"></div>
+                    <p>Gray 150</p>
+                </div>
+            </div>
+            <div class="bg-gray-160 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-160 border border-gray-300"></div>
+                    <p>Gray 160</p>
+                </div>
+            </div>
+            <div class="bg-gray-170 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-170 border border-gray-300"></div>
+                    <p>Gray 170</p>
+                </div>
+            </div>
+            <div class="bg-gray-180 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-180 border border-gray-300"></div>
+                    <p>Gray 180</p>
+                </div>
+            </div>
+            <div class="bg-gray-190 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-190 border border-gray-300"></div>
+                    <p>Gray 190</p>
+                </div>
+            </div>
+            <div class="bg-gray-200 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-200 border border-gray-300"></div>
+                    <p>Gray 200</p>
+                </div>
+            </div>
+            <div class="bg-gray-210 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-210 border border-gray-300"></div>
+                    <p>Gray 210</p>
+                </div>
+            </div>
+            <div class="bg-gray-220 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-220 border border-gray-300"></div>
+                    <p>Gray 220</p>
+                </div>
+            </div>
+            <div class="bg-gray-230 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-230 border border-gray-300"></div>
+                    <p>Gray 230</p>
+                </div>
+            </div>
+            <div class="bg-gray-240 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-240 border border-gray-300"></div>
+                    <p>Gray 240</p>
+                </div>
+            </div>
+            <div class="bg-gray-250 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-250 border border-gray-300"></div>
+                    <p>Gray 250</p>
+                </div>
+            </div>
+            <div class="bg-gray-260 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-260 border border-gray-300"></div>
+                    <p>Gray 260</p>
+                </div>
+            </div>
+            <div class="bg-gray-270 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-270 border border-gray-300"></div>
+                    <p>Gray 270</p>
+                </div>
+            </div>
+            <div class="bg-gray-280 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-280 border border-gray-300"></div>
+                    <p>Gray 280</p>
+                </div>
+            </div>
+            <div class="bg-gray-290 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-290 border border-gray-300"></div>
+                    <p>Gray 290</p>
+                </div>
+            </div>
+            <div class="bg-gray-300 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-300 border border-gray-300"></div>
+                    <p>Gray 300</p>
+                </div>
+            </div>
+            <div class="bg-gray-310 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-310 border border-gray-300"></div>
+                    <p>Gray 310</p>
+                </div>
+            </div>
+            <div class="bg-gray-320 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-320 border border-gray-300"></div>
+                    <p>Gray 320</p>
+                </div>
+            </div>
+            <div class="bg-gray-330 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-330 border border-gray-300"></div>
+                    <p>Gray 330</p>
+                </div>
+            </div>
+            <div class="bg-gray-340 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-340 border border-gray-300"></div>
+                    <p>Gray 340</p>
+                </div>
+            </div>
+            <div class="bg-gray-350 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-350 border border-gray-300"></div>
+                    <p>Gray 350</p>
+                </div>
+            </div>
+            <div class="bg-gray-360 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-360 border border-gray-300"></div>
+                    <p>Gray 360</p>
+                </div>
+            </div>
+            <div class="bg-gray-370 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-370 border border-gray-300"></div>
+                    <p>Gray 370</p>
+                </div>
+            </div>
+            <div class="bg-gray-380 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-380 border border-gray-300"></div>
+                    <p>Gray 380</p>
+                </div>
+            </div>
+            <div class="bg-gray-390 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-390 border border-gray-300"></div>
+                    <p>Gray 390</p>
+                </div>
+            </div>
+            <div class="bg-gray-400 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-400 border border-gray-300"></div>
+                    <p>Gray 400</p>
+                </div>
+            </div>
+            <div class="bg-gray-410 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-410 border border-gray-300"></div>
+                    <p>Gray 410</p>
+                </div>
+            </div>
+            <div class="bg-gray-420 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-420 border border-gray-300"></div>
+                    <p>Gray 420</p>
+                </div>
+            </div>
+            <div class="bg-gray-430 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-430 border border-gray-300"></div>
+                    <p>Gray 430</p>
+                </div>
+            </div>
+            <div class="bg-gray-440 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-440 border border-gray-300"></div>
+                    <p>Gray 440</p>
+                </div>
+            </div>
+            <div class="bg-gray-450 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-450 border border-gray-300"></div>
+                    <p>Gray 450</p>
+                </div>
+            </div>
+            <div class="bg-gray-460 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-460 border border-gray-300"></div>
+                    <p>Gray 460</p>
+                </div>
+            </div>
+            <div class="bg-gray-470 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-470 border border-gray-300"></div>
+                    <p>Gray 470</p>
+                </div>
+            </div>
+            <div class="bg-gray-480 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-480 border border-gray-300"></div>
+                    <p>Gray 480</p>
+                </div>
+            </div>
+            <div class="bg-gray-490 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-490 border border-gray-300"></div>
+                    <p>Gray 490</p>
+                </div>
+            </div>
+            <div class="bg-gray-500 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-500 border border-gray-300"></div>
+                    <p>Gray 500</p>
+                </div>
+            </div>
+            <div class="bg-gray-510 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-510 border border-gray-300"></div>
+                    <p>Gray 510</p>
+                </div>
+            </div>
+            <div class="bg-gray-520 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-520 border border-gray-300"></div>
+                    <p>Gray 520</p>
+                </div>
+            </div>
+            <div class="bg-gray-530 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-530 border border-gray-300"></div>
+                    <p>Gray 530</p>
+                </div>
+            </div>
+            <div class="bg-gray-540 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-540 border border-gray-300"></div>
+                    <p>Gray 540</p>
+                </div>
+            </div>
+            <div class="bg-gray-550 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-550 border border-gray-300"></div>
+                    <p>Gray 550</p>
+                </div>
+            </div>
+            <div class="bg-gray-560 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-560 border border-gray-300"></div>
+                    <p>Gray 560</p>
+                </div>
+            </div>
+            <div class="bg-gray-570 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-570 border border-gray-300"></div>
+                    <p>Gray 570</p>
+                </div>
+            </div>
+            <div class="bg-gray-580 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-580 border border-gray-300"></div>
+                    <p>Gray 580</p>
+                </div>
+            </div>
+            <div class="bg-gray-590 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-590 border border-gray-300"></div>
+                    <p>Gray 590</p>
+                </div>
+            </div>
+            <div class="bg-gray-600 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-600 border border-gray-300"></div>
+                    <p>Gray 600</p>
+                </div>
+            </div>
+            <div class="bg-gray-610 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-610 border border-gray-300"></div>
+                    <p>Gray 610</p>
+                </div>
+            </div>
+            <div class="bg-gray-620 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-620 border border-gray-300"></div>
+                    <p>Gray 620</p>
+                </div>
+            </div>
+            <div class="bg-gray-630 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-630 border border-gray-300"></div>
+                    <p>Gray 630</p>
+                </div>
+            </div>
+            <div class="bg-gray-640 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-640 border border-gray-300"></div>
+                    <p>Gray 640</p>
+                </div>
+            </div>
+            <div class="bg-gray-650 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-650 border border-gray-300"></div>
+                    <p>Gray 650</p>
+                </div>
+            </div>
+            <div class="bg-gray-660 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-660 border border-gray-300"></div>
+                    <p>Gray 660</p>
+                </div>
+            </div>
+            <div class="bg-gray-670 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-670 border border-gray-300"></div>
+                    <p>Gray 670</p>
+                </div>
+            </div>
+            <div class="bg-gray-680 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-680 border border-gray-300"></div>
+                    <p>Gray 680</p>
+                </div>
+            </div>
+            <div class="bg-gray-690 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-690 border border-gray-300"></div>
+                    <p>Gray 690</p>
+                </div>
+            </div>
+            <div class="bg-gray-700 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-700 border border-gray-300"></div>
+                    <p>Gray 700</p>
+                </div>
+            </div>
+            <div class="bg-gray-710 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-710 border border-gray-300"></div>
+                    <p>Gray 710</p>
+                </div>
+            </div>
+            <div class="bg-gray-720 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-720 border border-gray-300"></div>
+                    <p>Gray 720</p>
+                </div>
+            </div>
+            <div class="bg-gray-730 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-730 border border-gray-300"></div>
+                    <p>Gray 730</p>
+                </div>
+            </div>
+            <div class="bg-gray-740 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-740 border border-gray-300"></div>
+                    <p>Gray 740</p>
+                </div>
+            </div>
+            <div class="bg-gray-750 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-750 border border-gray-300"></div>
+                    <p>Gray 750</p>
+                </div>
+            </div>
+            <div class="bg-gray-760 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-760 border border-gray-300"></div>
+                    <p>Gray 760</p>
+                </div>
+            </div>
+            <div class="bg-gray-770 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-770 border border-gray-300"></div>
+                    <p>Gray 770</p>
+                </div>
+            </div>
+            <div class="bg-gray-780 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-780 border border-gray-300"></div>
+                    <p>Gray 780</p>
+                </div>
+            </div>
+            <div class="bg-gray-790 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-790 border border-gray-300"></div>
+                    <p>Gray 790</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-800 border border-gray-300"></div>
+                    <p>Gray 800</p>
+                </div>
+            </div>
+            <div class="bg-gray-810 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-810 border border-gray-300"></div>
+                    <p>Gray 810</p>
+                </div>
+            </div>
+            <div class="bg-gray-820 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-820 border border-gray-300"></div>
+                    <p>Gray 820</p>
+                </div>
+            </div>
+            <div class="bg-gray-830 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-830 border border-gray-300"></div>
+                    <p>Gray 830</p>
+                </div>
+            </div>
+            <div class="bg-gray-840 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-840 border border-gray-300"></div>
+                    <p>Gray 840</p>
+                </div>
+            </div>
+            <div class="bg-gray-850 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-850 border border-gray-300"></div>
+                    <p>Gray 850</p>
+                </div>
+            </div>
+            <div class="bg-gray-860 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-860 border border-gray-300"></div>
+                    <p>Gray 860</p>
+                </div>
+            </div>
+            <div class="bg-gray-870 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-870 border border-gray-300"></div>
+                    <p>Gray 870</p>
+                </div>
+            </div>
+            <div class="bg-gray-880 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-880 border border-gray-300"></div>
+                    <p>Gray 880</p>
+                </div>
+            </div>
+            <div class="bg-gray-890 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-890 border border-gray-300"></div>
+                    <p>Gray 890</p>
+                </div>
+            </div>
+            <div class="bg-gray-900 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-900 border border-gray-300"></div>
+                    <p>Gray 900</p>
+                </div>
+            </div>
+            <div class="bg-gray-910 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-910 border border-gray-300"></div>
+                    <p>Gray 910</p>
+                </div>
+            </div>
+            <div class="bg-gray-920 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-920 border border-gray-300"></div>
+                    <p>Gray 920</p>
+                </div>
+            </div>
+            <div class="bg-gray-930 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-930 border border-gray-300"></div>
+                    <p>Gray 930</p>
+                </div>
+            </div>
+            <div class="bg-gray-940 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-940 border border-gray-300"></div>
+                    <p>Gray 940</p>
+                </div>
+            </div>
+            <div class="bg-gray-950 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-950 border border-gray-300"></div>
+                    <p>Gray 950</p>
+                </div>
+            </div>
+            <div class="bg-gray-960 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-960 border border-gray-300"></div>
+                    <p>Gray 960</p>
+                </div>
+            </div>
+            <div class="bg-gray-970 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-970 border border-gray-300"></div>
+                    <p>Gray 970</p>
+                </div>
+            </div>
+            <div class="bg-gray-980 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-980 border border-gray-300"></div>
+                    <p>Gray 980</p>
+                </div>
+            </div>
+            <div class="bg-gray-990 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-gray-990 border border-gray-300"></div>
+                    <p>Gray 990</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

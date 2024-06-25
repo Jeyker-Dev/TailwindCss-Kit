@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zinc Color Palette</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-zinc-10 { background-color: #fcfcfc; }
+        .bg-zinc-20 { background-color: #fafafa; }
+        .bg-zinc-30 { background-color: #f8f8f9; }
+        .bg-zinc-40 { background-color: #f6f6f6; }
+        .bg-zinc-50 { background-color: #fafafa; }
+        .bg-zinc-60 { background-color: #f3f3f4; }
+        .bg-zinc-70 { background-color: #f1f1f2; }
+        .bg-zinc-80 { background-color: #efeff0; }
+        .bg-zinc-90 { background-color: #ededee; }
+        .bg-zinc-100 { background-color: #f4f4f5; }
+        .bg-zinc-110 { background-color: #eaeaec; }
+        .bg-zinc-120 { background-color: #e8e8ea; }
+        .bg-zinc-130 { background-color: #e6e6e7; }
+        .bg-zinc-140 { background-color: #e4e4e5; }
+        .bg-zinc-150 { background-color: #e2e2e3; }
+        .bg-zinc-160 { background-color: #e0e0e1; }
+        .bg-zinc-170 { background-color: #dedeef; }
+        .bg-zinc-180 { background-color: #dcddde; }
+        .bg-zinc-190 { background-color: #dadaec; }
+        .bg-zinc-200 { background-color: #e4e4e7; }
+        .bg-zinc-210 { background-color: #d5d5d8; }
+        .bg-zinc-220 { background-color: #d3d3d6; }
+        .bg-zinc-230 { background-color: #d1d1d4; }
+        .bg-zinc-240 { background-color: #cfced2; }
+        .bg-zinc-250 { background-color: #cdcdd0; }
+        .bg-zinc-260 { background-color: #cbcbce; }
+        .bg-zinc-270 { background-color: #c9c9cc; }
+        .bg-zinc-280 { background-color: #c7c7ca; }
+        .bg-zinc-290 { background-color: #c5c5c8; }
+        .bg-zinc-300 { background-color: #d4d4d8; }
+        .bg-zinc-310 { background-color: #bdbdc0; }
+        .bg-zinc-320 { background-color: #bababd; }
+        .bg-zinc-330 { background-color: #b8b8bb; }
+        .bg-zinc-340 { background-color: #b6b6b9; }
+        .bg-zinc-350 { background-color: #b4b4b7; }
+        .bg-zinc-360 { background-color: #b2b2b5; }
+        .bg-zinc-370 { background-color: #b0b0b3; }
+        .bg-zinc-380 { background-color: #aeafb1; }
+        .bg-zinc-390 { background-color: #acadb0; }
+        .bg-zinc-400 { background-color: #a1a1aa; }
+        .bg-zinc-410 { background-color: #a9a9b2; }
+        .bg-zinc-420 { background-color: #a7a7b0; }
+        .bg-zinc-430 { background-color: #a5a5ae; }
+        .bg-zinc-440 { background-color: #a3a3ac; }
+        .bg-zinc-450 { background-color: #a1a1aa; }
+        .bg-zinc-460 { background-color: #9f9fa8; }
+        .bg-zinc-470 { background-color: #9d9da6; }
+        .bg-zinc-480 { background-color: #9b9ba4; }
+        .bg-zinc-490 { background-color: #9999a2; }
+        .bg-zinc-500 { background-color: #71717a; }
+        .bg-zinc-510 { background-color: #95959e; }
+        .bg-zinc-520 { background-color: #93939c; }
+        .bg-zinc-530 { background-color: #91919a; }
+        .bg-zinc-540 { background-color: #8f8f98; }
+        .bg-zinc-550 { background-color: #8d8d96; }
+        .bg-zinc-560 { background-color: #8b8b94; }
+        .bg-zinc-570 { background-color: #898992; }
+        .bg-zinc-580 { background-color: #878790; }
+        .bg-zinc-590 { background-color: #85858e; }
+        .bg-zinc-600 { background-color: #52525b; }
+        .bg-zinc-610 { background-color: #818188; }
+        .bg-zinc-620 { background-color: #7f7f86; }
+        .bg-zinc-630 { background-color: #7d7d84; }
+        .bg-zinc-640 { background-color: #7b7b82; }
+        .bg-zinc-650 { background-color: #797980; }
+        .bg-zinc-660 { background-color: #77777e; }
+        .bg-zinc-670 { background-color: #75757c; }
+        .bg-zinc-680 { background-color: #73737a; }
+        .bg-zinc-690 { background-color: #717178; }
+        .bg-zinc-700 { background-color: #3f3f46; }
+        .bg-zinc-710 { background-color: #6d6d74; }
+        .bg-zinc-720 { background-color: #6b6b72; }
+        .bg-zinc-730 { background-color: #696970; }
+        .bg-zinc-740 { background-color: #67676e; }
+        .bg-zinc-750 { background-color: #65656c; }
+        .bg-zinc-760 { background-color: #63636a; }
+        .bg-zinc-770 { background-color: #616168; }
+        .bg-zinc-780 { background-color: #5f5f66; }
+        .bg-zinc-790 { background-color: #5d5d64; }
+        .bg-zinc-800 { background-color: #27272a; }
+        .bg-zinc-810 { background-color: #59595e; }
+        .bg-zinc-820 { background-color: #57575c; }
+        .bg-zinc-830 { background-color: #55555a; }
+        .bg-zinc-840 { background-color: #535358; }
+        .bg-zinc-850 { background-color: #515156; }
+        .bg-zinc-860 { background-color: #4f4f54; }
+        .bg-zinc-870 { background-color: #4d4d52; }
+        .bg-zinc-880 { background-color: #4b4b50; }
+        .bg-zinc-890 { background-color: #49494e; }
+        .bg-zinc-900 { background-color: #18181b; }
+        .bg-zinc-910 { background-color: #444449; }
+        .bg-zinc-920 { background-color: #424247; }
+        .bg-zinc-930 { background-color: #404045; }
+        .bg-zinc-940 { background-color: #3e3e43; }
+        .bg-zinc-950 { background-color: #09090b; }
+        .bg-zinc-960 { background-color: #3a3a3f; }
+        .bg-zinc-970 { background-color: #38383d; }
+        .bg-zinc-980 { background-color: #36363b; }
+        .bg-zinc-990 { background-color: #343439; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-2xl font-bold mb-4">Zinc Color Palette</h1>
+        <div class="grid grid-cols-5 gap-4">
+            <div class="bg-zinc-10 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-10 border border-gray-300"></div>
+                    <p>Zinc 10</p>
+                </div>
+            </div>
+            <div class="bg-zinc-20 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-20 border border-gray-300"></div>
+                    <p>Zinc 20</p>
+                </div>
+            </div>
+            <div class="bg-zinc-30 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-30 border border-gray-300"></div>
+                    <p>Zinc 30</p>
+                </div>
+            </div>
+            <div class="bg-zinc-40 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-40 border border-gray-300"></div>
+                    <p>Zinc 40</p>
+                </div>
+            </div>
+            <div class="bg-zinc-50 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-50 border border-gray-300"></div>
+                    <p>Zinc 50</p>
+                </div>
+            </div>
+            <div class="bg-zinc-60 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-60 border border-gray-300"></div>
+                    <p>Zinc 60</p>
+                </div>
+            </div>
+            <div class="bg-zinc-70 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-70 border border-gray-300"></div>
+                    <p>Zinc 70</p>
+                </div>
+            </div>
+            <div class="bg-zinc-80 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-80 border border-gray-300"></div>
+                    <p>Zinc 80</p>
+                </div>
+            </div>
+            <div class="bg-zinc-90 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-90 border border-gray-300"></div>
+                    <p>Zinc 90</p>
+                </div>
+            </div>
+            <div class="bg-zinc-100 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-100 border border-gray-300"></div>
+                    <p>Zinc 100</p>
+                </div>
+            </div>
+            <div class="bg-zinc-110 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-110 border border-gray-300"></div>
+                    <p>Zinc 110</p>
+                </div>
+            </div>
+            <div class="bg-zinc-120 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-120 border border-gray-300"></div>
+                    <p>Zinc 120</p>
+                </div>
+            </div>
+            <div class="bg-zinc-130 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-130 border border-gray-300"></div>
+                    <p>Zinc 130</p>
+                </div>
+            </div>
+            <div class="bg-zinc-140 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-140 border border-gray-300"></div>
+                    <p>Zinc 140</p>
+                </div>
+            </div>
+            <div class="bg-zinc-150 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-150 border border-gray-300"></div>
+                    <p>Zinc 150</p>
+                </div>
+            </div>
+            <div class="bg-zinc-160 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-160 border border-gray-300"></div>
+                    <p>Zinc 160</p>
+                </div>
+            </div>
+            <div class="bg-zinc-170 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-170 border border-gray-300"></div>
+                    <p>Zinc 170</p>
+                </div>
+            </div>
+            <div class="bg-zinc-180 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-180 border border-gray-300"></div>
+                    <p>Zinc 180</p>
+                </div>
+            </div>
+            <div class="bg-zinc-190 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-190 border border-gray-300"></div>
+                    <p>Zinc 190</p>
+                </div>
+            </div>
+            <div class="bg-zinc-200 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-200 border border-gray-300"></div>
+                    <p>Zinc 200</p>
+                </div>
+            </div>
+            <div class="bg-zinc-210 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-210 border border-gray-300"></div>
+                    <p>Zinc 210</p>
+                </div>
+            </div>
+            <div class="bg-zinc-220 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-220 border border-gray-300"></div>
+                    <p>Zinc 220</p>
+                </div>
+            </div>
+            <div class="bg-zinc-230 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-230 border border-gray-300"></div>
+                    <p>Zinc 230</p>
+                </div>
+            </div>
+            <div class="bg-zinc-240 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-240 border border-gray-300"></div>
+                    <p>Zinc 240</p>
+                </div>
+            </div>
+            <div class="bg-zinc-250 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-250 border border-gray-300"></div>
+                    <p>Zinc 250</p>
+                </div>
+            </div>
+            <div class="bg-zinc-260 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-260 border border-gray-300"></div>
+                    <p>Zinc 260</p>
+                </div>
+            </div>
+            <div class="bg-zinc-270 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-270 border border-gray-300"></div>
+                    <p>Zinc 270</p>
+                </div>
+            </div>
+            <div class="bg-zinc-280 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-280 border border-gray-300"></div>
+                    <p>Zinc 280</p>
+                </div>
+            </div>
+            <div class="bg-zinc-290 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-290 border border-gray-300"></div>
+                    <p>Zinc 290</p>
+                </div>
+            </div>
+            <div class="bg-zinc-300 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-300 border border-gray-300"></div>
+                    <p>Zinc 300</p>
+                </div>
+            </div>
+            <div class="bg-zinc-310 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-310 border border-gray-300"></div>
+                    <p>Zinc 310</p>
+                </div>
+            </div>
+            <div class="bg-zinc-320 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-320 border border-gray-300"></div>
+                    <p>Zinc 320</p>
+                </div>
+            </div>
+            <div class="bg-zinc-330 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-330 border border-gray-300"></div>
+                    <p>Zinc 330</p>
+                </div>
+            </div>
+            <div class="bg-zinc-340 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-340 border border-gray-300"></div>
+                    <p>Zinc 340</p>
+                </div>
+            </div>
+            <div class="bg-zinc-350 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-350 border border-gray-300"></div>
+                    <p>Zinc 350</p>
+                </div>
+            </div>
+            <div class="bg-zinc-360 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-360 border border-gray-300"></div>
+                    <p>Zinc 360</p>
+                </div>
+            </div>
+            <div class="bg-zinc-370 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-370 border border-gray-300"></div>
+                    <p>Zinc 370</p>
+                </div>
+            </div>
+            <div class="bg-zinc-380 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-380 border border-gray-300"></div>
+                    <p>Zinc 380</p>
+                </div>
+            </div>
+            <div class="bg-zinc-390 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-390 border border-gray-300"></div>
+                    <p>Zinc 390</p>
+                </div>
+            </div>
+            <div class="bg-zinc-400 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-400 border border-gray-300"></div>
+                    <p>Zinc 400</p>
+                </div>
+            </div>
+            <div class="bg-zinc-410 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-410 border border-gray-300"></div>
+                    <p>Zinc 410</p>
+                </div>
+            </div>
+            <div class="bg-zinc-420 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-420 border border-gray-300"></div>
+                    <p>Zinc 420</p>
+                </div>
+            </div>
+            <div class="bg-zinc-430 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-430 border border-gray-300"></div>
+                    <p>Zinc 430</p>
+                </div>
+            </div>
+            <div class="bg-zinc-440 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-440 border border-gray-300"></div>
+                    <p>Zinc 440</p>
+                </div>
+            </div>
+            <div class="bg-zinc-450 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-450 border border-gray-300"></div>
+                    <p>Zinc 450</p>
+                </div>
+            </div>
+            <div class="bg-zinc-460 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-460 border border-gray-300"></div>
+                    <p>Zinc 460</p>
+                </div>
+            </div>
+            <div class="bg-zinc-470 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-470 border border-gray-300"></div>
+                    <p>Zinc 470</p>
+                </div>
+            </div>
+            <div class="bg-zinc-480 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-480 border border-gray-300"></div>
+                    <p>Zinc 480</p>
+                </div>
+            </div>
+            <div class="bg-zinc-490 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-490 border border-gray-300"></div>
+                    <p>Zinc 490</p>
+                </div>
+            </div>
+            <div class="bg-zinc-500 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-500 border border-gray-300"></div>
+                    <p>Zinc 500</p>
+                </div>
+            </div>
+            <div class="bg-zinc-510 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-510 border border-gray-300"></div>
+                    <p>Zinc 510</p>
+                </div>
+            </div>
+            <div class="bg-zinc-520 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-520 border border-gray-300"></div>
+                    <p>Zinc 520</p>
+                </div>
+            </div>
+            <div class="bg-zinc-530 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-530 border border-gray-300"></div>
+                    <p>Zinc 530</p>
+                </div>
+            </div>
+            <div class="bg-zinc-540 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-540 border border-gray-300"></div>
+                    <p>Zinc 540</p>
+                </div>
+            </div>
+            <div class="bg-zinc-550 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-550 border border-gray-300"></div>
+                    <p>Zinc 550</p>
+                </div>
+            </div>
+            <div class="bg-zinc-560 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-560 border border-gray-300"></div>
+                    <p>Zinc 560</p>
+                </div>
+            </div>
+            <div class="bg-zinc-570 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-570 border border-gray-300"></div>
+                    <p>Zinc 570</p>
+                </div>
+            </div>
+            <div class="bg-zinc-580 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-580 border border-gray-300"></div>
+                    <p>Zinc 580</p>
+                </div>
+            </div>
+            <div class="bg-zinc-590 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-590 border border-gray-300"></div>
+                    <p>Zinc 590</p>
+                </div>
+            </div>
+            <div class="bg-zinc-600 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-600 border border-gray-300"></div>
+                    <p>Zinc 600</p>
+                </div>
+            </div>
+            <div class="bg-zinc-610 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-610 border border-gray-300"></div>
+                    <p>Zinc 610</p>
+                </div>
+            </div>
+            <div class="bg-zinc-620 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-620 border border-gray-300"></div>
+                    <p>Zinc 620</p>
+                </div>
+            </div>
+            <div class="bg-zinc-630 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-630 border border-gray-300"></div>
+                    <p>Zinc 630</p>
+                </div>
+            </div>
+            <div class="bg-zinc-640 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-640 border border-gray-300"></div>
+                    <p>Zinc 640</p>
+                </div>
+            </div>
+            <div class="bg-zinc-650 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-650 border border-gray-300"></div>
+                    <p>Zinc 650</p>
+                </div>
+            </div>
+            <div class="bg-zinc-660 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-660 border border-gray-300"></div>
+                    <p>Zinc 660</p>
+                </div>
+            </div>
+            <div class="bg-zinc-670 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-670 border border-gray-300"></div>
+                    <p>Zinc 670</p>
+                </div>
+            </div>
+            <div class="bg-zinc-680 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-680 border border-gray-300"></div>
+                    <p>Zinc 680</p>
+                </div>
+            </div>
+            <div class="bg-zinc-690 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-690 border border-gray-300"></div>
+                    <p>Zinc 690</p>
+                </div>
+            </div>
+            <div class="bg-zinc-700 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-700 border border-gray-300"></div>
+                    <p>Zinc 700</p>
+                </div>
+            </div>
+            <div class="bg-zinc-710 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-710 border border-gray-300"></div>
+                    <p>Zinc 710</p>
+                </div>
+            </div>
+            <div class="bg-zinc-720 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-720 border border-gray-300"></div>
+                    <p>Zinc 720</p>
+                </div>
+            </div>
+            <div class="bg-zinc-730 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-730 border border-gray-300"></div>
+                    <p>Zinc 730</p>
+                </div>
+            </div>
+            <div class="bg-zinc-740 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-740 border border-gray-300"></div>
+                    <p>Zinc 740</p>
+                </div>
+            </div>
+            <div class="bg-zinc-750 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-750 border border-gray-300"></div>
+                    <p>Zinc 750</p>
+                </div>
+            </div>
+            <div class="bg-zinc-760 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-760 border border-gray-300"></div>
+                    <p>Zinc 760</p>
+                </div>
+            </div>
+            <div class="bg-zinc-770 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-770 border border-gray-300"></div>
+                    <p>Zinc 770</p>
+                </div>
+            </div>
+            <div class="bg-zinc-780 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-780 border border-gray-300"></div>
+                    <p>Zinc 780</p>
+                </div>
+            </div>
+            <div class="bg-zinc-790 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-790 border border-gray-300"></div>
+                    <p>Zinc 790</p>
+                </div>
+            </div>
+            <div class="bg-zinc-800 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-800 border border-gray-300"></div>
+                    <p>Zinc 800</p>
+                </div>
+            </div>
+            <div class="bg-zinc-810 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-810 border border-gray-300"></div>
+                    <p>Zinc 810</p>
+                </div>
+            </div>
+            <div class="bg-zinc-820 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-820 border border-gray-300"></div>
+                    <p>Zinc 820</p>
+                </div>
+            </div>
+            <div class="bg-zinc-830 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-830 border border-gray-300"></div>
+                    <p>Zinc 830</p>
+                </div>
+            </div>
+            <div class="bg-zinc-840 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-840 border border-gray-300"></div>
+                    <p>Zinc 840</p>
+                </div>
+            </div>
+            <div class="bg-zinc-850 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-850 border border-gray-300"></div>
+                    <p>Zinc 850</p>
+                </div>
+            </div>
+            <div class="bg-zinc-860 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-860 border border-gray-300"></div>
+                    <p>Zinc 860</p>
+                </div>
+            </div>
+            <div class="bg-zinc-870 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-870 border border-gray-300"></div>
+                    <p>Zinc 870</p>
+                </div>
+            </div>
+            <div class="bg-zinc-880 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-880 border border-gray-300"></div>
+                    <p>Zinc 880</p>
+                </div>
+            </div>
+            <div class="bg-zinc-890 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-890 border border-gray-300"></div>
+                    <p>Zinc 890</p>
+                </div>
+            </div>
+            <div class="bg-zinc-900 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-900 border border-gray-300"></div>
+                    <p>Zinc 900</p>
+                </div>
+            </div>
+            <div class="bg-zinc-910 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-910 border border-gray-300"></div>
+                    <p>Zinc 910</p>
+                </div>
+            </div>
+            <div class="bg-zinc-920 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-920 border border-gray-300"></div>
+                    <p>Zinc 920</p>
+                </div>
+            </div>
+            <div class="bg-zinc-930 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-930 border border-gray-300"></div>
+                    <p>Zinc 930</p>
+                </div>
+            </div>
+            <div class="bg-zinc-940 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-940 border border-gray-300"></div>
+                    <p>Zinc 940</p>
+                </div>
+            </div>
+            <div class="bg-zinc-950 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-950 border border-gray-300"></div>
+                    <p>Zinc 950</p>
+                </div>
+            </div>
+            <div class="bg-zinc-960 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-960 border border-gray-300"></div>
+                    <p>Zinc 960</p>
+                </div>
+            </div>
+            <div class="bg-zinc-970 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-970 border border-gray-300"></div>
+                    <p>Zinc 970</p>
+                </div>
+            </div>
+            <div class="bg-zinc-980 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-980 border border-gray-300"></div>
+                    <p>Zinc 980</p>
+                </div>
+            </div>
+            <div class="bg-zinc-990 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-zinc-990 border border-gray-300"></div>
+                    <p>Zinc 990</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
