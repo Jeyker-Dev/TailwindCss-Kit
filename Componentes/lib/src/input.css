@@ -3,7 +3,6 @@
 @import url(../../public/card/card.css);
 @import url(../../public/galeria/galeria.css);
 @import url(../../public/hero/hero.css);
-@import url(../../public/colores/);
 
 @tailwind base;
 @tailwind components;

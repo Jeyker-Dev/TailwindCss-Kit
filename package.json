@@ -1,0 +1,15 @@
+{
+  "name": "tailwindcss-kit",
+  "version": "1.1.0",
+  "main": "./Componentes/lib/mypreset.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jeyker-Dev",
+  "license": "ISC",
+  "description": "",
+  "files": [
+    "Componentes/**/*"
+  ]
+}
