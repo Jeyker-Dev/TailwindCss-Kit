@@ -1,9 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["../public/**/*.{html,js}"],
   theme: {
     extend: 
     {
+
+      keyframes: 
+      {
+        lineGrow:
+        {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
+      },
+
+      animation: 
+      {
+        lineGrow: 'lineGrow 2s ease-in-out',
+      },
+
       colors: 
       {
         indigo: 

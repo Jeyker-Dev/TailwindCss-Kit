@@ -67,4 +67,34 @@
         @apply bg-gradient-to-r from-red-500 to-red-700 hover:from-red-700 hover:to-red-500 ring-red-300 focus:ring text-white
     }
 
+/* Add a glow to an element */
+.glow-primary 
+{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 1;
+    /*Aplicandoelefectodebrillo*/box-shadow: 0 0 15px #667eea, 0 0 20px #764ba2, 0 0 25px #667eea, 0 0 30px #764ba2;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+/* Increment the glow when its touched */
+.glow-primary:hover 
+{
+    /* Aumentando el brillo al pasar el mouse */
+    box-shadow: 0 0 20px #667eea, 0 0 25px #764ba2, 0 0 30px #667eea, 0 0 35px #764ba2;
+}
+
 }

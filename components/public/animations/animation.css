@@ -1,0 +1,280 @@
+:root 
+{
+    --tw-red-500: #ef4444;
+    --tw-green-500: #10b981;
+    --tw-blue-500: #3b82f6;
+    --tw-white: #ffffff;
+
+
+    --left-0: 0;
+    --left-1: 1px;
+    --left-2: 2px;
+    --left-3: 4px;
+    --left-4: 8px;
+    --left-5: 10px;
+    --left-6: 12px;
+    --left-7: 16px;
+    --left-8: 20px;
+    --left-9: 24px;
+    --left-10: 32px;
+    --left-11: 40px;
+}
+
+/* Animaciones */
+@layer components 
+{
+
+    /* Please remember to add a relative position to the element u want to use the animation and of course only when an animation has a absolute position */
+
+/* Add a dark background on top of the background */
+.bg-fade-top::before 
+{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 300px; /* Ajusta la altura del efecto de desvanecimiento según sea necesario */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, transparent 100%);
+        z-index: 10;
+}
+
+/* Add a color to the line with the class using like this u dont had to change the color on the property of background every time if u wanted more colors on others lines */
+.line-red { --line-color: var(--tw-red-500); }
+.line-green { --line-color: var(--tw-green-500); }
+.line-blue { --line-color: var(--tw-blue-500); }
+.line-white { --line-color: var(--tw-white); }
+
+
+/* Add a left position if u wanted the square more close of the line with this u dont got to change the position of the square every time if the square dont fit with the line */
+.left-position-8 { --left-p: var(--left-8); }
+.left-position-11 { --left-p: var(--left-11); }
+
+/* Add a line animation below the box */
+.animation-line::after 
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(1px);
+    width: 0;
+    height: 4px;
+    /* Add the class in the element html u wanted to change the color of the line */
+    background: var(--line-color, var(--tw-white)); /* default color white */
+    transition: width 0.3s ease;
+}
+
+
+
+/* Add a specific width to the line animation */
+.animation-line:hover::after 
+{
+        width: 100px;
+}
+
+/* Add a square on the beginning of the line */
+.animation-line-square::before 
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    /* Add the class in the element html u wanted to change the position of the square */
+    left: var(--left-p, var(--left-8));
+    transform: translateX( -50% ) translateY( 5px ); /*Desplazaelcuadradohaciaabajoparaquelamitadestédentrodelalínea*/width: 10px;
+    height: 10px;
+    background: #fff;
+    opacity: 0; /*Ocultaelcuadradoinicialmente*/
+    transition: transform 1.8s ease, opacity 0.5s ease;
+}
+
+/* Move the square from the beggining to the end of the line */
+.animation-line-square:hover::before 
+{
+        transform: translateY(50%);
+        opacity: 1;
+        box-shadow: 0 0 4px 1px rgba(159, 122, 234, 0.75);
+        -webkit-transform: translateY(50%);
+        -moz-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        -o-transform: translateY(50%);
+}
+
+/* Move the square from the beggining to the end of the line */
+.animation-line-square-move:hover::before 
+{
+        transform: translateX( 100px ) translateY(50%);
+        opacity: 1;
+        box-shadow: 0 0 4px 1px rgba(159, 122, 234, 0.75); /* Adjusted to match violet-400 */
+        -webkit-transform: translateX( 100px ) translateY(50%);
+        -moz-transform: translateX( 100px ) translateY(50%);
+        -ms-transform: translateX( 100px ) translateY(50%);
+        -o-transform: translateX( 100px ) translateY(50%);
+}
+
+/* Move an element and rotate it while it moves from left to right */
+@keyframes rotateAndMove 
+{
+    from {
+        transform: translateX(0%) translateY(50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(100px) translateY(50%) rotate(360deg);
+        -webkit-transform: translateX(100px) translateY(50%) rotate(360deg);
+        -moz-transform: translateX(100px) translateY(50%) rotate(360deg);
+        -ms-transform: translateX(100px) translateY(50%) rotate(360deg);
+        -o-transform: translateX(100px) translateY(50%) rotate(360deg);
+}
+}
+
+
+/* Add the animation RotateAndMove to an Element */
+.animation-rotateAndMove:hover::before 
+{
+    animation: rotateAndMove 1.8s ease forwards;
+}
+
+/* Make an element small and bigger */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Add the animation pulse to an element */
+.animation-pulse:hover::before 
+{
+    animation: pulse 1.8s ease infinite;
+}
+
+/* Move an Element from bottom to top */
+@keyframes bounce 
+{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Add the animation bounce to an element */
+.animation-bounce:hover::before 
+{
+    animation: bounce 1.8s ease infinite;
+}
+
+/* Move an Element From left to right */
+@keyframes moveLeftRight 
+{
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px); /* Ajusta este valor para controlar la distancia */
+    }
+}
+
+/* Add the animation moveLeftRight to an element */
+.animation-MoveLeftRight 
+{
+    animation: moveLeftRight 2s ease-in-out infinite;
+    -webkit-animation: moveLeftRight 2s ease-in-out infinite;
+}
+
+  /* Make a effect of pulse on an element */
+@keyframes pulse 
+{
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Add the animation pulse to an element */
+.animation-pulse 
+{
+    animation: pulse 2s infinite;
+}
+
+ /* Rotate an Element */
+@keyframes rotate 
+{
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Add the animation rotate to an element */
+.animation-rotate 
+{
+    animation: rotate 20s linear infinite;
+}
+
+ /* Rotate till the Middle of an Element */
+@keyframes rotate-mid 
+{
+    0% { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
+    50% { transform: rotate(2deg); -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); -ms-transform: rotate(2deg); -o-transform: rotate(2deg); }
+    100% { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
+}
+
+/* Add the animation rotate-mid to an element */
+.animation-rotate-mid 
+{
+    animation: rotate-mid 20s linear infinite;
+}
+
+
+  /* Make Swing an Element */
+@keyframes swing 
+{
+    0% { transform: rotate(-5deg); -webkit-transform: rotate(-5deg); -moz-transform: rotate(-5deg); -ms-transform: rotate(-5deg); -o-transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
+
+/* Add the animation swing to an element */
+.animation-swing 
+{
+    display: inline-block;
+    animation: swing 2s infinite;
+}
+
+ /* Aparición con Desplazamiento */
+@keyframes slideInLeft 
+{
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Add the animation slide-in-left to an element */
+.animation-slide-in-left 
+{
+    animation: slideInLeft 0.5s ease-out forwards;
+}
+
+/* animation-fade-in: Hace que el elemento se desvanezca gradualmente hasta ser completamente visible. */
+@keyframes animation-fade-in 
+{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Add the animation fade-in to an element */
+.animation-fade-in 
+{
+    animation: animation-fade-in 10s ease-out infinite;
+    -webkit-animation: animation-fade-in 10s ease-out infinite;
+}
+
+  /* Efecto 3D */
+.creativity:hover 
+{
+    transform: perspective(500px) rotateY(20deg);
+    transition: transform 0.5s;
+}
+
+
+}

@@ -1,7 +1,8 @@
+@import url(../../public/animations/animation.css);
 @import url(../../public/buttons/botones.css);
 @import url(../../public/dropdown/dropdown.css);
-@import url(../../public/card/card.css);
-@import url(../../public/galeria/galeria.css);
+@import url(../../public/cards/card.css);
+@import url(../../public/galery/galeria.css);
 @import url(../../public/hero/hero.css);
 
 @tailwind base;
