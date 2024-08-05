@@ -6,41 +6,76 @@
     <title>Lime Color Palette</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        .bg-lime-10 { background-color: #f7fee7; }
-        .bg-lime-40 { background-color: #e3fbc4; }
-        .bg-lime-70 { background-color: #d0f99e; }
-        .bg-lime-100 { background-color: #bcf779; }
-        .bg-lime-130 { background-color: #a8f554; }
-        .bg-lime-160 { background-color: #95f22f; }
-        .bg-lime-190 { background-color: #81f00a; }
-        .bg-lime-220 { background-color: #72c409; }
-        .bg-lime-250 { background-color: #63a708; }
-        .bg-lime-280 { background-color: #548a07; }
-        .bg-lime-310 { background-color: #457d06; }
-        .bg-lime-340 { background-color: #366005; }
-        .bg-lime-370 { background-color: #275304; }
-        .bg-lime-400 { background-color: #183704; }
-        .bg-lime-430 { background-color: #091a02; }
-        .bg-lime-460 { background-color: #000000; }
-        .bg-lime-490 { background-color: #1a3300; }
-        .bg-lime-520 { background-color: #334d00; }
-        .bg-lime-550 { background-color: #4d6600; }
-        .bg-lime-580 { background-color: #668000; }
-        .bg-lime-610 { background-color: #809900; }
-        .bg-lime-640 { background-color: #99b300; }
-        .bg-lime-670 { background-color: #b3cc00; }
-        .bg-lime-700 { background-color: #cce600; }
-        .bg-lime-730 { background-color: #e6ff00; }
-        .bg-lime-760 { background-color: #ffff00; }
-        .bg-lime-790 { background-color: #ffff1a; }
-        .bg-lime-820 { background-color: #ffff33; }
-        .bg-lime-850 { background-color: #ffff4d; }
-        .bg-lime-880 { background-color: #ffff66; }
-        .bg-lime-910 { background-color: #ffff80; }
-        .bg-lime-940 { background-color: #ffff99; }
-        .bg-lime-970 { background-color: #ffffb3; }
-        .bg-lime-1000 { background-color: #ffffcc; }
+        .bg-lime-50 { background-color: #f7fee7; }
+        .bg-lime-60 { background-color: #d8deca; }
+        .bg-lime-70 { background-color: #babfaf; }
+        .bg-lime-80 { background-color: #9da293; }
+        .bg-lime-90 { background-color: #818579; }
+        .bg-lime-100 { background-color: #666960; }
+        .bg-lime-110 { background-color: #ceddb1; }
+        .bg-lime-120 { background-color: #b1be99; }
+        .bg-lime-130 { background-color: #96a082; }
+        .bg-lime-140 { background-color: #7b846b; }
+        .bg-lime-150 { background-color: #626855; }
+        .bg-lime-200 { background-color: #d9f99f; }
+        .bg-lime-210 { background-color: #beda8c; }
+        .bg-lime-220 { background-color: #a4bc79; }
+        .bg-lime-230 { background-color: #8b9e67; }
+        .bg-lime-240 { background-color: #738256; }
+        .bg-lime-250 { background-color: #5b6745; }
+        .bg-lime-300 { background-color: #bef263; }
+        .bg-lime-310 { background-color: #a7d458; }
+        .bg-lime-320 { background-color: #91b74e; }
+        .bg-lime-330 { background-color: #7b9a43; }
+        .bg-lime-340 { background-color: #667f39; }
+        .bg-lime-350 { background-color: #51642f; }
+        .bg-lime-400 { background-color: #a1e633; }
+        .bg-lime-410 { background-color: #8eca30; }
+        .bg-lime-420 { background-color: #7bae2d; }
+        .bg-lime-430 { background-color: #699329; }
+        .bg-lime-440 { background-color: #587924; }
+        .bg-lime-450 { background-color: #476020; }
+        .bg-lime-500 { background-color: #82cb15; }
+        .bg-lime-510 { background-color: #73b219; }
+        .bg-lime-520 { background-color: #659a1a; }
+        .bg-lime-530 { background-color: #56821a; }
+        .bg-lime-540 { background-color: #496c1a; }
+        .bg-lime-550 { background-color: #3b5618; }
+        .bg-lime-600 { background-color: #66a50d; }
+        .bg-lime-610 { background-color: #5b9112; }
+        .bg-lime-620 { background-color: #507e14; }
+        .bg-lime-630 { background-color: #456b15; }
+        .bg-lime-640 { background-color: #3b5915; }
+        .bg-lime-650 { background-color: #304714; }
+        .bg-lime-700 { background-color: #4c7b0f; }
+        .bg-lime-710 { background-color: #446d11; }
+        .bg-lime-720 { background-color: #3c5f12; }
+        .bg-lime-730 { background-color: #355112; }
+        .bg-lime-740 { background-color: #2d4412; }
+        .bg-lime-750 { background-color: #263711; }
+        .bg-lime-800 { background-color: #406312; }
+        .bg-lime-810 { background-color: #3a5812; }
+        .bg-lime-820 { background-color: #334d12; }
+        .bg-lime-830 { background-color: #2d4212; }
+        .bg-lime-840 { background-color: #273811; }
+        .bg-lime-850 { background-color: #212e10; }
+        .bg-lime-900 { background-color: #355214; }
+        .bg-lime-910 { background-color: #304913; }
+        .bg-lime-920 { background-color: #2b4013; }
+        .bg-lime-930 { background-color: #263712; }
+        .bg-lime-940 { background-color: #212f11; }
+        .bg-lime-950 { background-color: #1a2e05; }
+        .bg-lime-960 { background-color: #182a05; }
+        .bg-lime-970 { background-color: #141d04; }
+        .bg-lime-980 { background-color: #0d1403; }
+        .bg-lime-990 { background-color: #090f02; }
+        .bg-lime-1000 { background-color: #050801; }
     </style>
+    
+    
+    
+    
+    
     
     
     
@@ -49,248 +84,457 @@
 </head>
 <body class="bg-gray-100">
     <div class="container mx-auto py-8">
-        <h1 class="text-2xl font-bold mb-4">Lime Color Palette</h1>
+        <h1 class="text-2xl font-bold mb-4">lime Color Palette</h1>
         <div class="grid grid-cols-5 gap-4">
 
-            <div class="bg-lime-10 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-lime-50 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-10 border border-gray-300"></div>
-                    <p>Lime 10</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-50 border border-gray-300"></div>
+                    <p>lime 50</p>
                 </div>
             </div>
 
-            <div class="bg-lime-40 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-lime-60 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-40 border border-gray-300"></div>
-                    <p>Lime 40</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-60 border border-gray-300"></div>
+                    <p>lime 60</p>
                 </div>
             </div>
 
             <div class="bg-lime-70 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-70 border border-gray-300"></div>
-                    <p>Lime 70</p>
+                    <p>lime 70</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-80 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-80 border border-gray-300"></div>
+                    <p>lime 80</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-90 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-90 border border-gray-300"></div>
+                    <p>lime 90</p>
                 </div>
             </div>
 
             <div class="bg-lime-100 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-100 border border-gray-300"></div>
-                    <p>Lime 100</p>
+                    <p>lime 100</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-110 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-110 border border-gray-300"></div>
+                    <p>lime 110</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-120 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-120 border border-gray-300"></div>
+                    <p>lime 120</p>
                 </div>
             </div>
 
             <div class="bg-lime-130 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-130 border border-gray-300"></div>
-                    <p>Lime 130</p>
+                    <p>lime 130</p>
                 </div>
             </div>
 
-            <div class="bg-lime-160 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-lime-140 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-160 border border-gray-300"></div>
-                    <p>Lime 160</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-140 border border-gray-300"></div>
+                    <p>lime 140</p>
                 </div>
             </div>
 
-            <div class="bg-lime-190 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-lime-150 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-190 border border-gray-300"></div>
-                    <p>Lime 190</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-150 border border-gray-300"></div>
+                    <p>lime 150</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-200 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-200 border border-gray-300"></div>
+                    <p>lime 200</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-210 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-210 border border-gray-300"></div>
+                    <p>lime 210</p>
                 </div>
             </div>
 
             <div class="bg-lime-220 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-220 border border-gray-300"></div>
-                    <p>Lime 220</p>
+                    <p>lime 220</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-230 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-230 border border-gray-300"></div>
+                    <p>lime 230</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-240 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-240 border border-gray-300"></div>
+                    <p>lime 240</p>
                 </div>
             </div>
 
             <div class="bg-lime-250 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-250 border border-gray-300"></div>
-                    <p>Lime 250</p>
+                    <p>lime 250</p>
                 </div>
             </div>
 
-            <div class="bg-lime-280 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-lime-300 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-280 border border-gray-300"></div>
-                    <p>Lime 280</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-310 border border-gray-300"></div>
+                    <p>lime 300</p>
                 </div>
             </div>
 
             <div class="bg-lime-310 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-310 border border-gray-300"></div>
-                    <p>Lime 310</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-340 border border-gray-300"></div>
+                    <p>lime 310</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-320 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-370 border border-gray-300"></div>
+                    <p>lime 320</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-330 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-400 border border-gray-300"></div>
+                    <p>lime 330</p>
                 </div>
             </div>
 
             <div class="bg-lime-340 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-340 border border-gray-300"></div>
-                    <p>Lime 340</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-430 border border-gray-300"></div>
+                    <p>lime 340</p>
                 </div>
             </div>
 
-            <div class="bg-lime-370 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-lime-350 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-370 border border-gray-300"></div>
-                    <p>Lime 370</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-460 border border-gray-300"></div>
+                    <p>lime 350</p>
                 </div>
             </div>
 
             <div class="bg-lime-400 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-400 border border-gray-300"></div>
-                    <p>Lime 400</p>
+                    <p>lime 400</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-410 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-430 border border-gray-300"></div>
+                    <p>lime 410</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-420 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-460 border border-gray-300"></div>
+                    <p>lime 420</p>
                 </div>
             </div>
 
             <div class="bg-lime-430 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-430 border border-gray-300"></div>
-                    <p>Lime 430</p>
-                </div>
-            </div>
-
-            <div class="bg-lime-460 h-24 flex items-center justify-center text-xs text-gray-800">
-                <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-460 border border-gray-300"></div>
-                    <p>Lime 460</p>
-                </div>
-            </div>
-
-            <div class="bg-lime-490 h-24 flex items-center justify-center text-xs text-gray-800">
-                <div>
                     <div class="w-16 h-16 mb-2 bg-lime-490 border border-gray-300"></div>
-                    <p>Lime 490</p>
+                    <p>lime 430</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-440 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-520 border border-gray-300"></div>
+                    <p>lime 440</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-450 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-550 border border-gray-300"></div>
+                    <p>lime 450</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-500 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-520 border border-gray-300"></div>
+                    <p>lime 500</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-510 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-510 border border-gray-300"></div>
+                    <p>lime 510</p>
                 </div>
             </div>
 
             <div class="bg-lime-520 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-520 border border-gray-300"></div>
-                    <p>Lime 520</p>
+                    <p>lime 520</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-530 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-530 border border-gray-300"></div>
+                    <p>lime 530</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-540 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-540 border border-gray-300"></div>
+                    <p>lime 540</p>
                 </div>
             </div>
 
             <div class="bg-lime-550 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-550 border border-gray-300"></div>
-                    <p>Lime 550</p>
+                    <p>lime 550</p>
                 </div>
             </div>
 
-            <div class="bg-lime-580 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-lime-600 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-580 border border-gray-300"></div>
-                    <p>Lime 580</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-610 border border-gray-300"></div>
+                    <p>lime 600</p>
                 </div>
             </div>
 
             <div class="bg-lime-610 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-610 border border-gray-300"></div>
-                    <p>Lime 610</p>
+                    <p>lime 610</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-620 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-620 border border-gray-300"></div>
+                    <p>lime 620</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-630 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-630 border border-gray-300"></div>
+                    <p>lime 630</p>
                 </div>
             </div>
 
             <div class="bg-lime-640 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-640 border border-gray-300"></div>
-                    <p>Lime 640</p>
+                    <p>lime 640</p>
                 </div>
             </div>
 
-            <div class="bg-lime-670 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-lime-650 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-670 border border-gray-300"></div>
-                    <p>Lime 670</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-650 border border-gray-300"></div>
+                    <p>lime 650</p>
                 </div>
             </div>
 
             <div class="bg-lime-700 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-700 border border-gray-300"></div>
-                    <p>Lime 700</p>
+                    <p>lime 700</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-710 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-710 border border-gray-300"></div>
+                    <p>lime 710</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-720 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-720 border border-gray-300"></div>
+                    <p>lime 720</p>
                 </div>
             </div>
 
             <div class="bg-lime-730 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-730 border border-gray-300"></div>
-                    <p>Lime 730</p>
+                    <p>lime 730</p>
                 </div>
             </div>
 
-            <div class="bg-lime-760 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-lime-740 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-760 border border-gray-300"></div>
-                    <p>Lime 760</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-740 border border-gray-300"></div>
+                    <p>lime 740</p>
                 </div>
             </div>
 
-            <div class="bg-lime-790 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-lime-750 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-790 border border-gray-300"></div>
-                    <p>Lime 790</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-750 border border-gray-300"></div>
+                    <p>lime 750</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-800 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-820 border border-gray-300"></div>
+                    <p>lime 800</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-810 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-810 border border-gray-300"></div>
+                    <p>lime 810</p>
                 </div>
             </div>
 
             <div class="bg-lime-820 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-820 border border-gray-300"></div>
-                    <p>Lime 820</p>
+                    <p>lime 820</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-830 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-830 border border-gray-300"></div>
+                    <p>lime 830</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-840 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-840 border border-gray-300"></div>
+                    <p>lime 840</p>
                 </div>
             </div>
 
             <div class="bg-lime-850 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-850 border border-gray-300"></div>
-                    <p>Lime 850</p>
+                    <p>lime 850</p>
                 </div>
             </div>
 
-            <div class="bg-lime-880 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-lime-900 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-880 border border-gray-300"></div>
-                    <p>Lime 880</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-910 border border-gray-300"></div>
+                    <p>lime 900</p>
                 </div>
             </div>
 
             <div class="bg-lime-910 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-910 border border-gray-300"></div>
-                    <p>Lime 910</p>
+                    <p>lime 910</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-920 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-920 border border-gray-300"></div>
+                    <p>lime 920</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-930 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-930 border border-gray-300"></div>
+                    <p>lime 930</p>
                 </div>
             </div>
 
             <div class="bg-lime-940 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-940 border border-gray-300"></div>
-                    <p>Lime 940</p>
+                    <p>lime 940</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-950 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-950 border border-gray-300"></div>
+                    <p>lime 950</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-960 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-960 border border-gray-300"></div>
+                    <p>lime 960</p>
                 </div>
             </div>
 
             <div class="bg-lime-970 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-lime-970 border border-gray-300"></div>
-                    <p>Lime 970</p>
+                    <p>lime 970</p>
                 </div>
             </div>
 
+            <div class="bg-lime-980 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-980 border border-gray-300"></div>
+                    <p>lime 980</p>
+                </div>
+            </div>
+
+            <div class="bg-lime-990 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-lime-990 border border-gray-300"></div>
+                    <p>lime 990</p>
+                </div>
+            </div>
 
             <div class="bg-lime-1000 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-lime-990 border border-gray-300"></div>
-                    <p>Lime 1000</p>
+                    <div class="w-16 h-16 mb-2 bg-lime-1000 border border-gray-300"></div>
+                    <p>lime 1000</p>
                 </div>
             </div>
-        </div>
+
     </div>
 </body>
 </html>

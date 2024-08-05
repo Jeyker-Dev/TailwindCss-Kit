@@ -3,291 +3,538 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Color Palette</title>
+    <title>red Color Palette</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        .bg-red-10 { background-color: #fef2f2; }
-        .bg-red-40 { background-color: #fdcccc; }
-        .bg-red-70 { background-color: #fbacac; }
-        .bg-red-100 { background-color: #fa8b8b; }
-        .bg-red-130 { background-color: #f96b6b; }
-        .bg-red-160 { background-color: #f84b4b; }
-        .bg-red-190 { background-color: #f72b2b; }
-        .bg-red-220 { background-color: #f50b0b; }
-        .bg-red-250 { background-color: #d40a0a; }
-        .bg-red-280 { background-color: #b10909; }
-        .bg-red-310 { background-color: #900808; }
-        .bg-red-340 { background-color: #710707; }
-        .bg-red-370 { background-color: #520606; }
-        .bg-red-400 { background-color: #320505; }
-        .bg-red-430 { background-color: #130404; }
-        .bg-red-460 { background-color: #000000; }
-        .bg-red-490 { background-color: #1a0000; }
-        .bg-red-520 { background-color: #330000; }
-        .bg-red-550 { background-color: #4d0000; }
-        .bg-red-580 { background-color: #660000; }
-        .bg-red-610 { background-color: #800000; }
-        .bg-red-640 { background-color: #990000; }
-        .bg-red-670 { background-color: #b30000; }
-        .bg-red-700 { background-color: #cc0000; }
-        .bg-red-730 { background-color: #e60000; }
-        .bg-red-760 { background-color: #ff0000; }
-        .bg-red-790 { background-color: #ff1a1a; }
-        .bg-red-820 { background-color: #ff3333; }
-        .bg-red-850 { background-color: #ff4d4d; }
-        .bg-red-880 { background-color: #ff6666; }
-        .bg-red-910 { background-color: #ff8080; }
-        .bg-red-940 { background-color: #ff9999; }
-        .bg-red-970 { background-color: #ffb3b3; }
-        .bg-red-1000 { background-color: #ffcccc; }
+        .bg-red-50 { background-color: #fef1f1; }
+        .bg-red-60 { background-color: #ded3d3; }
+        .bg-red-70 { background-color: #bfb6b6; }
+        .bg-red-80 { background-color: #a29a9a; }
+        .bg-red-90 { background-color: #696464; }
+        .bg-red-100 { background-color: #fee1e1; }
+        .bg-red-110 { background-color: #dec5c5; }
+        .bg-red-120 { background-color: #bfaaaa; }
+        .bg-red-130 { background-color: #a29090; }
+        .bg-red-140 { background-color: #857676; }
+        .bg-red-150 { background-color: #695e5e; }
+        .bg-red-200 { background-color: #fec8c8; }
+        .bg-red-210 { background-color: #deb0af; }
+        .bg-red-220 { background-color: #c09898; }
+        .bg-red-230 { background-color: #a28080; }
+        .bg-red-240 { background-color: #856a6a; }
+        .bg-red-250 { background-color: #695454; }
+        .bg-red-300 { background-color: #fca6a6; }
+        .bg-red-310 { background-color: #dd9292; }
+        .bg-red-320 { background-color: #be7f7e; }
+        .bg-red-330 { background-color: #a16c6b; }
+        .bg-red-340 { background-color: #845959; }
+        .bg-red-350 { background-color: #694847; }
+        .bg-red-400 { background-color: #f87171; }
+        .bg-red-410 { background-color: #d96464; }
+        .bg-red-420 { background-color: #bc5857; }
+        .bg-red-430 { background-color: #9f4c4b; }
+        .bg-red-440 { background-color: #83403f; }
+        .bg-red-450 { background-color: #683433; }
+        .bg-red-500 { background-color: #ef4343; }
+        .bg-red-510 { background-color: #d23d3c; }
+        .bg-red-520 { background-color: #b53835; }
+        .bg-red-530 { background-color: #9a322e; }
+        .bg-red-540 { background-color: #7f2b27; }
+        .bg-red-550 { background-color: #652521; }
+        .bg-red-600 { background-color: #dc2828; }
+        .bg-red-610 { background-color: #c12724; }
+        .bg-red-620 { background-color: #a82621; }
+        .bg-red-630 { background-color: #8e241d; }
+        .bg-red-640 { background-color: #76211a; }
+        .bg-red-650 { background-color: #5e1d16; }
+        .bg-red-700 { background-color: #ba1c1c; }
+        .bg-red-710 { background-color: #a41d1a; }
+        .bg-red-720 { background-color: #8f1d18; }
+        .bg-red-730 { background-color: #7a1c16; }
+        .bg-red-740 { background-color: #651b14; }
+        .bg-red-750 { background-color: #511811; }
+        .bg-red-800 { background-color: #981b1b; }
+        .bg-red-810 { background-color: #861b19; }
+        .bg-red-820 { background-color: #751b17; }
+        .bg-red-830 { background-color: #641a15; }
+        .bg-red-840 { background-color: #541813; }
+        .bg-red-850 { background-color: #441610; }
+        .bg-red-900 { background-color: #811d1d; }
+        .bg-red-910 { background-color: #721c1b; }
+        .bg-red-920 { background-color: #641b18; }
+        .bg-red-930 { background-color: #561916; }
+        .bg-red-940 { background-color: #481714; }
+        .bg-red-950 { background-color: #430a0a; }
+        .bg-red-960 { background-color: #3c0b09; }
+        .bg-red-970 { background-color: #240a04; }
+        .bg-red-980 { background-color: #1e0803; }
+        .bg-red-990 { background-color: #170502; }
+        .bg-red-1000 { background-color: #0e0301; }
     </style>
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 </head>
 <body class="bg-gray-100">
     <div class="container mx-auto py-8">
-        <h1 class="text-2xl font-bold mb-4">Red Color Palette</h1>
+        <h1 class="text-2xl font-bold mb-4">red Color Palette</h1>
         <div class="grid grid-cols-5 gap-4">
 
-            <div class="bg-red-10 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-red-50 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-10 border border-gray-300"></div>
-                    <p>Red 10</p>
+                    <div class="w-16 h-16 mb-2 bg-red-50 border border-gray-300"></div>
+                    <p>red 50</p>
                 </div>
             </div>
 
-            <div class="bg-red-40 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-red-60 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-40 border border-gray-300"></div>
-                    <p>Red 40</p>
+                    <div class="w-16 h-16 mb-2 bg-red-60 border border-gray-300"></div>
+                    <p>red 60</p>
                 </div>
             </div>
 
             <div class="bg-red-70 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-70 border border-gray-300"></div>
-                    <p>Red 70</p>
+                    <p>red 70</p>
+                </div>
+            </div>
+
+            <div class="bg-red-80 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-80 border border-gray-300"></div>
+                    <p>red 80</p>
+                </div>
+            </div>
+
+            <div class="bg-red-90 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-90 border border-gray-300"></div>
+                    <p>red 90</p>
                 </div>
             </div>
 
             <div class="bg-red-100 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-100 border border-gray-300"></div>
-                    <p>Red 100</p>
+                    <p>red 100</p>
+                </div>
+            </div>
+
+            <div class="bg-red-110 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-110 border border-gray-300"></div>
+                    <p>red 110</p>
+                </div>
+            </div>
+
+            <div class="bg-red-120 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-120 border border-gray-300"></div>
+                    <p>red 120</p>
                 </div>
             </div>
 
             <div class="bg-red-130 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-130 border border-gray-300"></div>
-                    <p>Red 130</p>
+                    <p>red 130</p>
                 </div>
             </div>
 
-            <div class="bg-red-160 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-red-140 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-160 border border-gray-300"></div>
-                    <p>Red 160</p>
+                    <div class="w-16 h-16 mb-2 bg-red-140 border border-gray-300"></div>
+                    <p>red 140</p>
                 </div>
             </div>
 
-            <div class="bg-red-190 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-red-150 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-190 border border-gray-300"></div>
-                    <p>Red 190</p>
+                    <div class="w-16 h-16 mb-2 bg-red-150 border border-gray-300"></div>
+                    <p>red 150</p>
+                </div>
+            </div>
+
+            <div class="bg-red-200 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-200 border border-gray-300"></div>
+                    <p>red 200</p>
+                </div>
+            </div>
+
+            <div class="bg-red-210 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-210 border border-gray-300"></div>
+                    <p>red 210</p>
                 </div>
             </div>
 
             <div class="bg-red-220 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-220 border border-gray-300"></div>
-                    <p>Red 220</p>
+                    <p>red 220</p>
+                </div>
+            </div>
+
+            <div class="bg-red-230 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-230 border border-gray-300"></div>
+                    <p>red 230</p>
+                </div>
+            </div>
+
+            <div class="bg-red-240 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-240 border border-gray-300"></div>
+                    <p>red 240</p>
                 </div>
             </div>
 
             <div class="bg-red-250 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-250 border border-gray-300"></div>
-                    <p>Red 250</p>
+                    <p>red 250</p>
                 </div>
             </div>
 
-            <div class="bg-red-280 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-red-300 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-280 border border-gray-300"></div>
-                    <p>Red 280</p>
+                    <div class="w-16 h-16 mb-2 bg-red-310 border border-gray-300"></div>
+                    <p>red 300</p>
                 </div>
             </div>
 
             <div class="bg-red-310 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-310 border border-gray-300"></div>
-                    <p>Red 310</p>
+                    <div class="w-16 h-16 mb-2 bg-red-340 border border-gray-300"></div>
+                    <p>red 310</p>
+                </div>
+            </div>
+
+            <div class="bg-red-320 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-370 border border-gray-300"></div>
+                    <p>red 320</p>
+                </div>
+            </div>
+
+            <div class="bg-red-330 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-400 border border-gray-300"></div>
+                    <p>red 330</p>
                 </div>
             </div>
 
             <div class="bg-red-340 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-340 border border-gray-300"></div>
-                    <p>Red 340</p>
+                    <div class="w-16 h-16 mb-2 bg-red-430 border border-gray-300"></div>
+                    <p>red 340</p>
                 </div>
             </div>
 
-            <div class="bg-red-370 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-red-350 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-370 border border-gray-300"></div>
-                    <p>Red 370</p>
+                    <div class="w-16 h-16 mb-2 bg-red-460 border border-gray-300"></div>
+                    <p>red 350</p>
                 </div>
             </div>
 
             <div class="bg-red-400 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-400 border border-gray-300"></div>
-                    <p>Red 400</p>
+                    <p>red 400</p>
+                </div>
+            </div>
+
+            <div class="bg-red-410 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-430 border border-gray-300"></div>
+                    <p>red 410</p>
+                </div>
+            </div>
+
+            <div class="bg-red-420 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-460 border border-gray-300"></div>
+                    <p>red 420</p>
                 </div>
             </div>
 
             <div class="bg-red-430 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-430 border border-gray-300"></div>
-                    <p>Red 430</p>
-                </div>
-            </div>
-
-            <div class="bg-red-460 h-24 flex items-center justify-center text-xs text-gray-800">
-                <div>
-                    <div class="w-16 h-16 mb-2 bg-red-460 border border-gray-300"></div>
-                    <p>Red 460</p>
-                </div>
-            </div>
-
-            <div class="bg-red-490 h-24 flex items-center justify-center text-xs text-gray-800">
-                <div>
                     <div class="w-16 h-16 mb-2 bg-red-490 border border-gray-300"></div>
-                    <p>Red 490</p>
+                    <p>red 430</p>
+                </div>
+            </div>
+
+            <div class="bg-red-440 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-520 border border-gray-300"></div>
+                    <p>red 440</p>
+                </div>
+            </div>
+
+            <div class="bg-red-450 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-550 border border-gray-300"></div>
+                    <p>red 450</p>
+                </div>
+            </div>
+
+            <div class="bg-red-500 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-520 border border-gray-300"></div>
+                    <p>red 500</p>
+                </div>
+            </div>
+
+            <div class="bg-red-510 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-510 border border-gray-300"></div>
+                    <p>red 510</p>
                 </div>
             </div>
 
             <div class="bg-red-520 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-520 border border-gray-300"></div>
-                    <p>Red 520</p>
+                    <p>red 520</p>
+                </div>
+            </div>
+
+            <div class="bg-red-530 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-530 border border-gray-300"></div>
+                    <p>red 530</p>
+                </div>
+            </div>
+
+            <div class="bg-red-540 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-540 border border-gray-300"></div>
+                    <p>red 540</p>
                 </div>
             </div>
 
             <div class="bg-red-550 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-550 border border-gray-300"></div>
-                    <p>Red 550</p>
+                    <p>red 550</p>
                 </div>
             </div>
 
-            <div class="bg-red-580 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-red-600 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-580 border border-gray-300"></div>
-                    <p>Red 580</p>
+                    <div class="w-16 h-16 mb-2 bg-red-610 border border-gray-300"></div>
+                    <p>red 600</p>
                 </div>
             </div>
 
             <div class="bg-red-610 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-610 border border-gray-300"></div>
-                    <p>Red 610</p>
+                    <p>red 610</p>
+                </div>
+            </div>
+
+            <div class="bg-red-620 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-620 border border-gray-300"></div>
+                    <p>red 620</p>
+                </div>
+            </div>
+
+            <div class="bg-red-630 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-630 border border-gray-300"></div>
+                    <p>red 630</p>
                 </div>
             </div>
 
             <div class="bg-red-640 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-640 border border-gray-300"></div>
-                    <p>Red 640</p>
+                    <p>red 640</p>
                 </div>
             </div>
 
-            <div class="bg-red-670 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-red-650 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-670 border border-gray-300"></div>
-                    <p>Red 670</p>
+                    <div class="w-16 h-16 mb-2 bg-red-650 border border-gray-300"></div>
+                    <p>red 650</p>
                 </div>
             </div>
 
             <div class="bg-red-700 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-700 border border-gray-300"></div>
-                    <p>Red 700</p>
+                    <p>red 700</p>
+                </div>
+            </div>
+
+            <div class="bg-red-710 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-710 border border-gray-300"></div>
+                    <p>red 710</p>
+                </div>
+            </div>
+
+            <div class="bg-red-720 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-720 border border-gray-300"></div>
+                    <p>red 720</p>
                 </div>
             </div>
 
             <div class="bg-red-730 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-730 border border-gray-300"></div>
-                    <p>Red 730</p>
+                    <p>red 730</p>
                 </div>
             </div>
 
-            <div class="bg-red-760 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-red-740 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-760 border border-gray-300"></div>
-                    <p>Red 760</p>
+                    <div class="w-16 h-16 mb-2 bg-red-740 border border-gray-300"></div>
+                    <p>red 740</p>
                 </div>
             </div>
 
-            <div class="bg-red-790 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-red-750 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-790 border border-gray-300"></div>
-                    <p>Red 790</p>
+                    <div class="w-16 h-16 mb-2 bg-red-750 border border-gray-300"></div>
+                    <p>red 750</p>
+                </div>
+            </div>
+
+            <div class="bg-red-800 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-820 border border-gray-300"></div>
+                    <p>red 800</p>
+                </div>
+            </div>
+
+            <div class="bg-red-810 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-810 border border-gray-300"></div>
+                    <p>red 810</p>
                 </div>
             </div>
 
             <div class="bg-red-820 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-820 border border-gray-300"></div>
-                    <p>Red 820</p>
+                    <p>red 820</p>
+                </div>
+            </div>
+
+            <div class="bg-red-830 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-830 border border-gray-300"></div>
+                    <p>red 830</p>
+                </div>
+            </div>
+
+            <div class="bg-red-840 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-840 border border-gray-300"></div>
+                    <p>red 840</p>
                 </div>
             </div>
 
             <div class="bg-red-850 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-850 border border-gray-300"></div>
-                    <p>Red 850</p>
+                    <p>red 850</p>
                 </div>
             </div>
 
-            <div class="bg-red-880 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-red-900 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-880 border border-gray-300"></div>
-                    <p>Red 880</p>
+                    <div class="w-16 h-16 mb-2 bg-red-910 border border-gray-300"></div>
+                    <p>red 900</p>
                 </div>
             </div>
 
             <div class="bg-red-910 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-910 border border-gray-300"></div>
-                    <p>Red 910</p>
+                    <p>red 910</p>
+                </div>
+            </div>
+
+            <div class="bg-red-920 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-920 border border-gray-300"></div>
+                    <p>red 920</p>
+                </div>
+            </div>
+
+            <div class="bg-red-930 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-930 border border-gray-300"></div>
+                    <p>red 930</p>
                 </div>
             </div>
 
             <div class="bg-red-940 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-940 border border-gray-300"></div>
-                    <p>Red 940</p>
+                    <p>red 940</p>
+                </div>
+            </div>
+
+            <div class="bg-red-950 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-950 border border-gray-300"></div>
+                    <p>red 950</p>
+                </div>
+            </div>
+
+            <div class="bg-red-960 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-960 border border-gray-300"></div>
+                    <p>red 960</p>
                 </div>
             </div>
 
             <div class="bg-red-970 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-red-970 border border-gray-300"></div>
-                    <p>Red 970</p>
+                    <p>red 970</p>
                 </div>
             </div>
 
+            <div class="bg-red-980 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-980 border border-gray-300"></div>
+                    <p>red 980</p>
+                </div>
+            </div>
+
+            <div class="bg-red-990 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-red-990 border border-gray-300"></div>
+                    <p>red 990</p>
+                </div>
+            </div>
 
             <div class="bg-red-1000 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-red-990 border border-gray-300"></div>
-                    <p>Red 1000</p>
+                    <div class="w-16 h-16 mb-2 bg-red-1000 border border-gray-300"></div>
+                    <p>red 1000</p>
                 </div>
             </div>
-        </div>
+
     </div>
 </body>
 </html>

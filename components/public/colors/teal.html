@@ -3,44 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teal Color Palette</title>
+    <title>teal Color Palette</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        .bg-teal-10 { background-color: #f0fdfa; }
-        .bg-teal-40 { background-color: #ccfbf1; }
-        .bg-teal-70 { background-color: #99f6e4; }
-        .bg-teal-100 { background-color: #5eead4; }
-        .bg-teal-130 { background-color: #2dd4bf; }
-        .bg-teal-160 { background-color: #14b8a6; }
-        .bg-teal-190 { background-color: #0d9488; }
-        .bg-teal-220 { background-color: #0f766e; }
-        .bg-teal-250 { background-color: #115e59; }
-        .bg-teal-280 { background-color: #134e4a; }
-        .bg-teal-310 { background-color: #14523b; }
-        .bg-teal-340 { background-color: #146b5e; }
-        .bg-teal-370 { background-color: #147d77; }
-        .bg-teal-400 { background-color: #148f80; }
-        .bg-teal-430 { background-color: #149f88; }
-        .bg-teal-460 { background-color: #14b89f; }
-        .bg-teal-490 { background-color: #14c8b4; }
-        .bg-teal-520 { background-color: #14d8c9; }
-        .bg-teal-550 { background-color: #14e8dd; }
-        .bg-teal-580 { background-color: #14f8f2; }
-        .bg-teal-610 { background-color: #14ffff; }
-        .bg-teal-640 { background-color: #33ffff; }
-        .bg-teal-670 { background-color: #4dffff; }
-        .bg-teal-700 { background-color: #66ffff; }
-        .bg-teal-730 { background-color: #80ffff; }
-        .bg-teal-760 { background-color: #99ffff; }
-        .bg-teal-790 { background-color: #b3ffff; }
-        .bg-teal-820 { background-color: #ccffff; }
-        .bg-teal-850 { background-color: #e6ffff; }
-        .bg-teal-880 { background-color: #f0ffff; }
-        .bg-teal-910 { background-color: #faffff; }
-        .bg-teal-940 { background-color: #ffffff; }
-        .bg-teal-970 { background-color: #f0f9f9; }
-        .bg-teal-1000 { background-color: #e0f3f3; }
+        .bg-teal-50 { background-color: #f2fdfa; }
+        .bg-teal-60 { background-color: #d4dddb; }
+        .bg-teal-70 { background-color: #b7bfbd; }
+        .bg-teal-80 { background-color: #9aa19f; }
+        .bg-teal-90 { background-color: #7f8483; }
+        .bg-teal-100 { background-color: #646867; }
+        .bg-teal-110 { background-color: #b2dcd2; }
+        .bg-teal-120 { background-color: #9abdb5; }
+        .bg-teal-130 { background-color: #82a099; }
+        .bg-teal-140 { background-color: #6c837e; }
+        .bg-teal-150 { background-color: #566863; }
+        .bg-teal-200 { background-color: #98f6e3; }
+        .bg-teal-210 { background-color: #86d7c7; }
+        .bg-teal-220 { background-color: #75baac; }
+        .bg-teal-230 { background-color: #649d91; }
+        .bg-teal-240 { background-color: #538177; }
+        .bg-teal-250 { background-color: #43665e; }
+        .bg-teal-300 { background-color: #5dead5; }
+        .bg-teal-310 { background-color: #54cdbb; }
+        .bg-teal-320 { background-color: #4bb1a1; }
+        .bg-teal-330 { background-color: #429588; }
+        .bg-teal-340 { background-color: #397b70; }
+        .bg-teal-350 { background-color: #306159; }
+        .bg-teal-400 { background-color: #2bd4bd; }
+        .bg-teal-410 { background-color: #2cbaa6; }
+        .bg-teal-420 { background-color: #2ba18f; }
+        .bg-teal-430 { background-color: #29887a; }
+        .bg-teal-440 { background-color: #267064; }
+        .bg-teal-450 { background-color: #225950; }
+        .bg-teal-500 { background-color: #14b8a5; }
+        .bg-teal-510 { background-color: #1ba291; }
+        .bg-teal-520 { background-color: #1e8c7e; }
+        .bg-teal-530 { background-color: #1f776b; }
+        .bg-teal-540 { background-color: #1e6259; }
+        .bg-teal-550 { background-color: #1c4e47; }
+        .bg-teal-600 { background-color: #0d968b; }
+        .bg-teal-610 { background-color: #15847b; }
+        .bg-teal-620 { background-color: #18736a; }
+        .bg-teal-630 { background-color: #1a625b; }
+        .bg-teal-640 { background-color: #19514c; }
+        .bg-teal-650 { background-color: #18413d; }
+        .bg-teal-700 { background-color: #0f756d; }
+        .bg-teal-710 { background-color: #136760; }
+        .bg-teal-720 { background-color: #165a54; }
+        .bg-teal-730 { background-color: #164d48; }
+        .bg-teal-740 { background-color: #16413d; }
+        .bg-teal-750 { background-color: #153531; }
+        .bg-teal-800 { background-color: #115f5a; }
+        .bg-teal-810 { background-color: #135450; }
+        .bg-teal-820 { background-color: #144a46; }
+        .bg-teal-830 { background-color: #14403c; }
+        .bg-teal-840 { background-color: #143633; }
+        .bg-teal-850 { background-color: #132c2a; }
+        .bg-teal-900 { background-color: #134e4a; }
+        .bg-teal-910 { background-color: #144642; }
+        .bg-teal-920 { background-color: #143d3a; }
+        .bg-teal-930 { background-color: #133532; }
+        .bg-teal-940 { background-color: #132d2b; }
+        .bg-teal-950 { background-color: #042f2e; }
+        .bg-teal-960 { background-color: #062a2a; }
+        .bg-teal-970 { background-color: #091918; }
+        .bg-teal-980 { background-color: #071514; }
+        .bg-teal-990 { background-color: #040f0f; }
+        .bg-teal-1000 { background-color: #020808; }
     </style>
+    
+    
+    
+    
+    
     
     
     
@@ -49,248 +84,457 @@
 </head>
 <body class="bg-gray-100">
     <div class="container mx-auto py-8">
-        <h1 class="text-2xl font-bold mb-4">Teal Color Palette</h1>
+        <h1 class="text-2xl font-bold mb-4">teal Color Palette</h1>
         <div class="grid grid-cols-5 gap-4">
 
-            <div class="bg-teal-10 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-teal-50 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-10 border border-gray-300"></div>
-                    <p>Teal 10</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-50 border border-gray-300"></div>
+                    <p>teal 50</p>
                 </div>
             </div>
 
-            <div class="bg-teal-40 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-teal-60 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-40 border border-gray-300"></div>
-                    <p>Teal 40</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-60 border border-gray-300"></div>
+                    <p>teal 60</p>
                 </div>
             </div>
 
             <div class="bg-teal-70 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-70 border border-gray-300"></div>
-                    <p>Teal 70</p>
+                    <p>teal 70</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-80 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-80 border border-gray-300"></div>
+                    <p>teal 80</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-90 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-90 border border-gray-300"></div>
+                    <p>teal 90</p>
                 </div>
             </div>
 
             <div class="bg-teal-100 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-100 border border-gray-300"></div>
-                    <p>Teal 100</p>
+                    <p>teal 100</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-110 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-110 border border-gray-300"></div>
+                    <p>teal 110</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-120 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-120 border border-gray-300"></div>
+                    <p>teal 120</p>
                 </div>
             </div>
 
             <div class="bg-teal-130 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-130 border border-gray-300"></div>
-                    <p>Teal 130</p>
+                    <p>teal 130</p>
                 </div>
             </div>
 
-            <div class="bg-teal-160 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-teal-140 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-160 border border-gray-300"></div>
-                    <p>Teal 160</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-140 border border-gray-300"></div>
+                    <p>teal 140</p>
                 </div>
             </div>
 
-            <div class="bg-teal-190 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-teal-150 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-190 border border-gray-300"></div>
-                    <p>Teal 190</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-150 border border-gray-300"></div>
+                    <p>teal 150</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-200 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-200 border border-gray-300"></div>
+                    <p>teal 200</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-210 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-210 border border-gray-300"></div>
+                    <p>teal 210</p>
                 </div>
             </div>
 
             <div class="bg-teal-220 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-220 border border-gray-300"></div>
-                    <p>Teal 220</p>
+                    <p>teal 220</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-230 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-230 border border-gray-300"></div>
+                    <p>teal 230</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-240 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-240 border border-gray-300"></div>
+                    <p>teal 240</p>
                 </div>
             </div>
 
             <div class="bg-teal-250 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-250 border border-gray-300"></div>
-                    <p>Teal 250</p>
+                    <p>teal 250</p>
                 </div>
             </div>
 
-            <div class="bg-teal-280 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-teal-300 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-280 border border-gray-300"></div>
-                    <p>Teal 280</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-310 border border-gray-300"></div>
+                    <p>teal 300</p>
                 </div>
             </div>
 
             <div class="bg-teal-310 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-310 border border-gray-300"></div>
-                    <p>Teal 310</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-340 border border-gray-300"></div>
+                    <p>teal 310</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-320 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-370 border border-gray-300"></div>
+                    <p>teal 320</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-330 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-400 border border-gray-300"></div>
+                    <p>teal 330</p>
                 </div>
             </div>
 
             <div class="bg-teal-340 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-340 border border-gray-300"></div>
-                    <p>Teal 340</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-430 border border-gray-300"></div>
+                    <p>teal 340</p>
                 </div>
             </div>
 
-            <div class="bg-teal-370 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-teal-350 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-370 border border-gray-300"></div>
-                    <p>Teal 370</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-460 border border-gray-300"></div>
+                    <p>teal 350</p>
                 </div>
             </div>
 
             <div class="bg-teal-400 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-400 border border-gray-300"></div>
-                    <p>Teal 400</p>
+                    <p>teal 400</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-410 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-430 border border-gray-300"></div>
+                    <p>teal 410</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-420 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-460 border border-gray-300"></div>
+                    <p>teal 420</p>
                 </div>
             </div>
 
             <div class="bg-teal-430 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-430 border border-gray-300"></div>
-                    <p>Teal 430</p>
-                </div>
-            </div>
-
-            <div class="bg-teal-460 h-24 flex items-center justify-center text-xs text-gray-800">
-                <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-460 border border-gray-300"></div>
-                    <p>Teal 460</p>
-                </div>
-            </div>
-
-            <div class="bg-teal-490 h-24 flex items-center justify-center text-xs text-gray-800">
-                <div>
                     <div class="w-16 h-16 mb-2 bg-teal-490 border border-gray-300"></div>
-                    <p>Teal 490</p>
+                    <p>teal 430</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-440 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-520 border border-gray-300"></div>
+                    <p>teal 440</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-450 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-550 border border-gray-300"></div>
+                    <p>teal 450</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-500 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-520 border border-gray-300"></div>
+                    <p>teal 500</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-510 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-510 border border-gray-300"></div>
+                    <p>teal 510</p>
                 </div>
             </div>
 
             <div class="bg-teal-520 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-520 border border-gray-300"></div>
-                    <p>Teal 520</p>
+                    <p>teal 520</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-530 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-530 border border-gray-300"></div>
+                    <p>teal 530</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-540 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-540 border border-gray-300"></div>
+                    <p>teal 540</p>
                 </div>
             </div>
 
             <div class="bg-teal-550 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-550 border border-gray-300"></div>
-                    <p>Teal 550</p>
+                    <p>teal 550</p>
                 </div>
             </div>
 
-            <div class="bg-teal-580 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-teal-600 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-580 border border-gray-300"></div>
-                    <p>Teal 580</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-610 border border-gray-300"></div>
+                    <p>teal 600</p>
                 </div>
             </div>
 
             <div class="bg-teal-610 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-610 border border-gray-300"></div>
-                    <p>Teal 610</p>
+                    <p>teal 610</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-620 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-620 border border-gray-300"></div>
+                    <p>teal 620</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-630 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-630 border border-gray-300"></div>
+                    <p>teal 630</p>
                 </div>
             </div>
 
             <div class="bg-teal-640 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-640 border border-gray-300"></div>
-                    <p>Teal 640</p>
+                    <p>teal 640</p>
                 </div>
             </div>
 
-            <div class="bg-teal-670 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-teal-650 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-670 border border-gray-300"></div>
-                    <p>Teal 670</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-650 border border-gray-300"></div>
+                    <p>teal 650</p>
                 </div>
             </div>
 
             <div class="bg-teal-700 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-700 border border-gray-300"></div>
-                    <p>Teal 700</p>
+                    <p>teal 700</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-710 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-710 border border-gray-300"></div>
+                    <p>teal 710</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-720 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-720 border border-gray-300"></div>
+                    <p>teal 720</p>
                 </div>
             </div>
 
             <div class="bg-teal-730 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-730 border border-gray-300"></div>
-                    <p>Teal 730</p>
+                    <p>teal 730</p>
                 </div>
             </div>
 
-            <div class="bg-teal-760 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-teal-740 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-760 border border-gray-300"></div>
-                    <p>Teal 760</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-740 border border-gray-300"></div>
+                    <p>teal 740</p>
                 </div>
             </div>
 
-            <div class="bg-teal-790 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-teal-750 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-790 border border-gray-300"></div>
-                    <p>Teal 790</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-750 border border-gray-300"></div>
+                    <p>teal 750</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-800 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-820 border border-gray-300"></div>
+                    <p>teal 800</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-810 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-810 border border-gray-300"></div>
+                    <p>teal 810</p>
                 </div>
             </div>
 
             <div class="bg-teal-820 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-820 border border-gray-300"></div>
-                    <p>Teal 820</p>
+                    <p>teal 820</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-830 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-830 border border-gray-300"></div>
+                    <p>teal 830</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-840 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-840 border border-gray-300"></div>
+                    <p>teal 840</p>
                 </div>
             </div>
 
             <div class="bg-teal-850 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-850 border border-gray-300"></div>
-                    <p>Teal 850</p>
+                    <p>teal 850</p>
                 </div>
             </div>
 
-            <div class="bg-teal-880 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-teal-900 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-880 border border-gray-300"></div>
-                    <p>Teal 880</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-910 border border-gray-300"></div>
+                    <p>teal 900</p>
                 </div>
             </div>
 
             <div class="bg-teal-910 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-910 border border-gray-300"></div>
-                    <p>Teal 910</p>
+                    <p>teal 910</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-920 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-920 border border-gray-300"></div>
+                    <p>teal 920</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-930 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-930 border border-gray-300"></div>
+                    <p>teal 930</p>
                 </div>
             </div>
 
             <div class="bg-teal-940 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-940 border border-gray-300"></div>
-                    <p>Teal 940</p>
+                    <p>teal 940</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-950 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-950 border border-gray-300"></div>
+                    <p>teal 950</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-960 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-960 border border-gray-300"></div>
+                    <p>teal 960</p>
                 </div>
             </div>
 
             <div class="bg-teal-970 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-teal-970 border border-gray-300"></div>
-                    <p>Teal 970</p>
+                    <p>teal 970</p>
                 </div>
             </div>
 
+            <div class="bg-teal-980 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-980 border border-gray-300"></div>
+                    <p>teal 980</p>
+                </div>
+            </div>
+
+            <div class="bg-teal-990 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-teal-990 border border-gray-300"></div>
+                    <p>teal 990</p>
+                </div>
+            </div>
 
             <div class="bg-teal-1000 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-teal-990 border border-gray-300"></div>
-                    <p>Teal 1000</p>
+                    <div class="w-16 h-16 mb-2 bg-teal-1000 border border-gray-300"></div>
+                    <p>teal 1000</p>
                 </div>
             </div>
-        </div>
+
     </div>
 </body>
 </html>

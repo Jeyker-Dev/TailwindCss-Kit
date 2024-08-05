@@ -3,44 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sky Color Palette</title>
+    <title>sky Color Palette</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        .bg-sky-10 { background-color: #f0f9ff; }
-        .bg-sky-40 { background-color: #e0f2fe; }
-        .bg-sky-70 { background-color: #bae6fd; }
-        .bg-sky-100 { background-color: #7dd3fc; }
-        .bg-sky-130 { background-color: #38bdf8; }
-        .bg-sky-160 { background-color: #0ea5e9; }
-        .bg-sky-190 { background-color: #0284c7; }
-        .bg-sky-220 { background-color: #0369a1; }
-        .bg-sky-250 { background-color: #075985; }
-        .bg-sky-280 { background-color: #0c4a6e; }
-        .bg-sky-310 { background-color: #093d60; }
-        .bg-sky-340 { background-color: #083557; }
-        .bg-sky-370 { background-color: #072d4d; }
-        .bg-sky-400 { background-color: #062544; }
-        .bg-sky-430 { background-color: #051d3a; }
-        .bg-sky-460 { background-color: #041530; }
-        .bg-sky-490 { background-color: #030c26; }
-        .bg-sky-520 { background-color: #02041c; }
-        .bg-sky-550 { background-color: #010012; }
-        .bg-sky-580 { background-color: #00122c; }
-        .bg-sky-610 { background-color: #002248; }
-        .bg-sky-640 { background-color: #003265; }
-        .bg-sky-670 { background-color: #004282; }
-        .bg-sky-700 { background-color: #0052a0; }
-        .bg-sky-730 { background-color: #0062bd; }
-        .bg-sky-760 { background-color: #0072da; }
-        .bg-sky-790 { background-color: #1a81de; }
-        .bg-sky-820 { background-color: #3391e1; }
-        .bg-sky-850 { background-color: #4da1e4; }
-        .bg-sky-880 { background-color: #66b1e7; }
-        .bg-sky-910 { background-color: #80c1ea; }
-        .bg-sky-940 { background-color: #99d1ed; }
-        .bg-sky-970 { background-color: #b3e1f0; }
-        .bg-sky-1000 { background-color: #cceff3; }
+        .bg-sky-50 { background-color: #f0f9ff; }
+        .bg-sky-60 { background-color: #d2dadf; }
+        .bg-sky-70 { background-color: #b5bcc0; }
+        .bg-sky-80 { background-color: #999ea2; }
+        .bg-sky-90 { background-color: #7e8285; }
+        .bg-sky-100 { background-color: #e1f3fe; }
+        .bg-sky-110 { background-color: #c5d5de; }
+        .bg-sky-120 { background-color: #aab7bf; }
+        .bg-sky-130 { background-color: #909ba2; }
+        .bg-sky-140 { background-color: #767f85; }
+        .bg-sky-150 { background-color: #5e6569; }
+        .bg-sky-200 { background-color: #bae5fd; }
+        .bg-sky-210 { background-color: #a3c9dd; }
+        .bg-sky-220 { background-color: #8dadbf; }
+        .bg-sky-230 { background-color: #7892a1; }
+        .bg-sky-240 { background-color: #637884; }
+        .bg-sky-250 { background-color: #4f5f68; }
+        .bg-sky-300 { background-color: #7ed4fc; }
+        .bg-sky-310 { background-color: #70badd; }
+        .bg-sky-320 { background-color: #62a0be; }
+        .bg-sky-330 { background-color: #5488a0; }
+        .bg-sky-340 { background-color: #477084; }
+        .bg-sky-350 { background-color: #3a5968; }
+        .bg-sky-400 { background-color: #3abff8; }
+        .bg-sky-410 { background-color: #37a8d9; }
+        .bg-sky-420 { background-color: #3491bb; }
+        .bg-sky-430 { background-color: #307b9e; }
+        .bg-sky-440 { background-color: #2b6682; }
+        .bg-sky-450 { background-color: #265167; }
+        .bg-sky-500 { background-color: #0da2e7; }
+        .bg-sky-510 { background-color: #198fca; }
+        .bg-sky-520 { background-color: #1e7caf; }
+        .bg-sky-530 { background-color: #206994; }
+        .bg-sky-540 { background-color: #1f5779; }
+        .bg-sky-550 { background-color: #1e4660; }
+        .bg-sky-600 { background-color: #0284c5; }
+        .bg-sky-610 { background-color: #1174ad; }
+        .bg-sky-620 { background-color: #176595; }
+        .bg-sky-630 { background-color: #1a567f; }
+        .bg-sky-640 { background-color: #1b4869; }
+        .bg-sky-650 { background-color: #193a53; }
+        .bg-sky-700 { background-color: #0369a0; }
+        .bg-sky-710 { background-color: #0e5d8d; }
+        .bg-sky-720 { background-color: #14517a; }
+        .bg-sky-730 { background-color: #164668; }
+        .bg-sky-740 { background-color: #173b56; }
+        .bg-sky-750 { background-color: #163045; }
+        .bg-sky-800 { background-color: #075783; }
+        .bg-sky-810 { background-color: #0e4d74; }
+        .bg-sky-820 { background-color: #124465; }
+        .bg-sky-830 { background-color: #143b56; }
+        .bg-sky-840 { background-color: #143148; }
+        .bg-sky-850 { background-color: #13293a; }
+        .bg-sky-900 { background-color: #0c4a6e; }
+        .bg-sky-910 { background-color: #104261; }
+        .bg-sky-920 { background-color: #123a55; }
+        .bg-sky-930 { background-color: #133249; }
+        .bg-sky-940 { background-color: #132b3d; }
+        .bg-sky-950 { background-color: #082f49; }
+        .bg-sky-960 { background-color: #0b2a41; }
+        .bg-sky-970 { background-color: #0d1923; }
+        .bg-sky-980 { background-color: #0b141c; }
+        .bg-sky-990 { background-color: #080f15; }
+        .bg-sky-1000 { background-color: #04080d; }
     </style>
+    
+    
+    
     
     
     
@@ -51,248 +84,457 @@
 </head>
 <body class="bg-gray-100">
     <div class="container mx-auto py-8">
-        <h1 class="text-2xl font-bold mb-4">Sky Color Palette</h1>
+        <h1 class="text-2xl font-bold mb-4">sky Color Palette</h1>
         <div class="grid grid-cols-5 gap-4">
 
-            <div class="bg-sky-10 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-sky-50 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-10 border border-gray-300"></div>
-                    <p>Sky 10</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-50 border border-gray-300"></div>
+                    <p>sky 50</p>
                 </div>
             </div>
 
-            <div class="bg-sky-40 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-sky-60 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-40 border border-gray-300"></div>
-                    <p>Sky 40</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-60 border border-gray-300"></div>
+                    <p>sky 60</p>
                 </div>
             </div>
 
             <div class="bg-sky-70 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-70 border border-gray-300"></div>
-                    <p>Sky 70</p>
+                    <p>sky 70</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-80 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-80 border border-gray-300"></div>
+                    <p>sky 80</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-90 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-90 border border-gray-300"></div>
+                    <p>sky 90</p>
                 </div>
             </div>
 
             <div class="bg-sky-100 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-100 border border-gray-300"></div>
-                    <p>Sky 100</p>
+                    <p>sky 100</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-110 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-110 border border-gray-300"></div>
+                    <p>sky 110</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-120 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-120 border border-gray-300"></div>
+                    <p>sky 120</p>
                 </div>
             </div>
 
             <div class="bg-sky-130 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-130 border border-gray-300"></div>
-                    <p>Sky 130</p>
+                    <p>sky 130</p>
                 </div>
             </div>
 
-            <div class="bg-sky-160 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-sky-140 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-160 border border-gray-300"></div>
-                    <p>Sky 160</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-140 border border-gray-300"></div>
+                    <p>sky 140</p>
                 </div>
             </div>
 
-            <div class="bg-sky-190 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-sky-150 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-190 border border-gray-300"></div>
-                    <p>Sky 190</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-150 border border-gray-300"></div>
+                    <p>sky 150</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-200 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-200 border border-gray-300"></div>
+                    <p>sky 200</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-210 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-210 border border-gray-300"></div>
+                    <p>sky 210</p>
                 </div>
             </div>
 
             <div class="bg-sky-220 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-220 border border-gray-300"></div>
-                    <p>Sky 220</p>
+                    <p>sky 220</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-230 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-230 border border-gray-300"></div>
+                    <p>sky 230</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-240 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-240 border border-gray-300"></div>
+                    <p>sky 240</p>
                 </div>
             </div>
 
             <div class="bg-sky-250 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-250 border border-gray-300"></div>
-                    <p>Sky 250</p>
+                    <p>sky 250</p>
                 </div>
             </div>
 
-            <div class="bg-sky-280 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-sky-300 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-280 border border-gray-300"></div>
-                    <p>Sky 280</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-310 border border-gray-300"></div>
+                    <p>sky 300</p>
                 </div>
             </div>
 
             <div class="bg-sky-310 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-310 border border-gray-300"></div>
-                    <p>Sky 310</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-340 border border-gray-300"></div>
+                    <p>sky 310</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-320 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-370 border border-gray-300"></div>
+                    <p>sky 320</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-330 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-400 border border-gray-300"></div>
+                    <p>sky 330</p>
                 </div>
             </div>
 
             <div class="bg-sky-340 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-340 border border-gray-300"></div>
-                    <p>Sky 340</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-430 border border-gray-300"></div>
+                    <p>sky 340</p>
                 </div>
             </div>
 
-            <div class="bg-sky-370 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-sky-350 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-370 border border-gray-300"></div>
-                    <p>Sky 370</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-460 border border-gray-300"></div>
+                    <p>sky 350</p>
                 </div>
             </div>
 
             <div class="bg-sky-400 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-400 border border-gray-300"></div>
-                    <p>Sky 400</p>
+                    <p>sky 400</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-410 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-430 border border-gray-300"></div>
+                    <p>sky 410</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-420 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-460 border border-gray-300"></div>
+                    <p>sky 420</p>
                 </div>
             </div>
 
             <div class="bg-sky-430 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-430 border border-gray-300"></div>
-                    <p>Sky 430</p>
-                </div>
-            </div>
-
-            <div class="bg-sky-460 h-24 flex items-center justify-center text-xs text-gray-800">
-                <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-460 border border-gray-300"></div>
-                    <p>Sky 460</p>
-                </div>
-            </div>
-
-            <div class="bg-sky-490 h-24 flex items-center justify-center text-xs text-gray-800">
-                <div>
                     <div class="w-16 h-16 mb-2 bg-sky-490 border border-gray-300"></div>
-                    <p>Sky 490</p>
+                    <p>sky 430</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-440 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-520 border border-gray-300"></div>
+                    <p>sky 440</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-450 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-550 border border-gray-300"></div>
+                    <p>sky 450</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-500 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-520 border border-gray-300"></div>
+                    <p>sky 500</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-510 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-510 border border-gray-300"></div>
+                    <p>sky 510</p>
                 </div>
             </div>
 
             <div class="bg-sky-520 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-520 border border-gray-300"></div>
-                    <p>Sky 520</p>
+                    <p>sky 520</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-530 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-530 border border-gray-300"></div>
+                    <p>sky 530</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-540 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-540 border border-gray-300"></div>
+                    <p>sky 540</p>
                 </div>
             </div>
 
             <div class="bg-sky-550 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-550 border border-gray-300"></div>
-                    <p>Sky 550</p>
+                    <p>sky 550</p>
                 </div>
             </div>
 
-            <div class="bg-sky-580 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-sky-600 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-580 border border-gray-300"></div>
-                    <p>Sky 580</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-610 border border-gray-300"></div>
+                    <p>sky 600</p>
                 </div>
             </div>
 
             <div class="bg-sky-610 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-610 border border-gray-300"></div>
-                    <p>Sky 610</p>
+                    <p>sky 610</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-620 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-620 border border-gray-300"></div>
+                    <p>sky 620</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-630 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-630 border border-gray-300"></div>
+                    <p>sky 630</p>
                 </div>
             </div>
 
             <div class="bg-sky-640 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-640 border border-gray-300"></div>
-                    <p>Sky 640</p>
+                    <p>sky 640</p>
                 </div>
             </div>
 
-            <div class="bg-sky-670 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-sky-650 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-670 border border-gray-300"></div>
-                    <p>Sky 670</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-650 border border-gray-300"></div>
+                    <p>sky 650</p>
                 </div>
             </div>
 
             <div class="bg-sky-700 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-700 border border-gray-300"></div>
-                    <p>Sky 700</p>
+                    <p>sky 700</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-710 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-710 border border-gray-300"></div>
+                    <p>sky 710</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-720 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-720 border border-gray-300"></div>
+                    <p>sky 720</p>
                 </div>
             </div>
 
             <div class="bg-sky-730 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-730 border border-gray-300"></div>
-                    <p>Sky 730</p>
+                    <p>sky 730</p>
                 </div>
             </div>
 
-            <div class="bg-sky-760 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-sky-740 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-760 border border-gray-300"></div>
-                    <p>Sky 760</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-740 border border-gray-300"></div>
+                    <p>sky 740</p>
                 </div>
             </div>
 
-            <div class="bg-sky-790 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-sky-750 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-790 border border-gray-300"></div>
-                    <p>Sky 790</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-750 border border-gray-300"></div>
+                    <p>sky 750</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-800 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-820 border border-gray-300"></div>
+                    <p>sky 800</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-810 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-810 border border-gray-300"></div>
+                    <p>sky 810</p>
                 </div>
             </div>
 
             <div class="bg-sky-820 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-820 border border-gray-300"></div>
-                    <p>Sky 820</p>
+                    <p>sky 820</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-830 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-830 border border-gray-300"></div>
+                    <p>sky 830</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-840 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-840 border border-gray-300"></div>
+                    <p>sky 840</p>
                 </div>
             </div>
 
             <div class="bg-sky-850 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-850 border border-gray-300"></div>
-                    <p>Sky 850</p>
+                    <p>sky 850</p>
                 </div>
             </div>
 
-            <div class="bg-sky-880 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-sky-900 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-880 border border-gray-300"></div>
-                    <p>Sky 880</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-910 border border-gray-300"></div>
+                    <p>sky 900</p>
                 </div>
             </div>
 
             <div class="bg-sky-910 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-910 border border-gray-300"></div>
-                    <p>Sky 910</p>
+                    <p>sky 910</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-920 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-920 border border-gray-300"></div>
+                    <p>sky 920</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-930 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-930 border border-gray-300"></div>
+                    <p>sky 930</p>
                 </div>
             </div>
 
             <div class="bg-sky-940 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-940 border border-gray-300"></div>
-                    <p>Sky 940</p>
+                    <p>sky 940</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-950 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-950 border border-gray-300"></div>
+                    <p>sky 950</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-960 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-960 border border-gray-300"></div>
+                    <p>sky 960</p>
                 </div>
             </div>
 
             <div class="bg-sky-970 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-sky-970 border border-gray-300"></div>
-                    <p>Sky 970</p>
+                    <p>sky 970</p>
                 </div>
             </div>
 
+            <div class="bg-sky-980 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-980 border border-gray-300"></div>
+                    <p>sky 980</p>
+                </div>
+            </div>
+
+            <div class="bg-sky-990 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-sky-990 border border-gray-300"></div>
+                    <p>sky 990</p>
+                </div>
+            </div>
 
             <div class="bg-sky-1000 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-sky-990 border border-gray-300"></div>
-                    <p>Sky 1000</p>
+                    <div class="w-16 h-16 mb-2 bg-sky-1000 border border-gray-300"></div>
+                    <p>sky 1000</p>
                 </div>
             </div>
-        </div>
+
     </div>
 </body>
 </html>

@@ -3,44 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Color Palette</title>
+    <title>blue Color Palette</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        .bg-blue-10 { background-color: #f0f9ff; }
-        .bg-blue-40 { background-color: #dbeafe; }
-        .bg-blue-70 { background-color: #bfdbfe; }
-        .bg-blue-100 { background-color: #93c5fd; }
-        .bg-blue-130 { background-color: #60a5fa; }
-        .bg-blue-160 { background-color: #3b82f6; }
-        .bg-blue-190 { background-color: #2563eb; }
-        .bg-blue-220 { background-color: #1d4ed8; }
-        .bg-blue-250 { background-color: #1e40af; }
-        .bg-blue-280 { background-color: #1e3a8a; }
-        .bg-blue-310 { background-color: #1e3a8a; }
-        .bg-blue-340 { background-color: #163172; }
-        .bg-blue-370 { background-color: #0f2d5d; }
-        .bg-blue-400 { background-color: #002d5d; }
-        .bg-blue-430 { background-color: #002259; }
-        .bg-blue-460 { background-color: #001e50; }
-        .bg-blue-490 { background-color: #001947; }
-        .bg-blue-520 { background-color: #00153e; }
-        .bg-blue-550 { background-color: #001135; }
-        .bg-blue-580 { background-color: #000c2c; }
-        .bg-blue-610 { background-color: #000923; }
-        .bg-blue-640 { background-color: #00061a; }
-        .bg-blue-670 { background-color: #000312; }
-        .bg-blue-700 { background-color: #000009; }
-        .bg-blue-730 { background-color: #010e1f; }
-        .bg-blue-760 { background-color: #021f44; }
-        .bg-blue-790 { background-color: #04396e; }
-        .bg-blue-820 { background-color: #064d8e; }
-        .bg-blue-850 { background-color: #0767b6; }
-        .bg-blue-880 { background-color: #0887e0; }
-        .bg-blue-910 { background-color: #099be8; }
-        .bg-blue-940 { background-color: #0ab2f2; }
-        .bg-blue-970 { background-color: #0bcff7; }
-        .bg-blue-1000 { background-color: #0c8c9e; }
+        .bg-blue-50 { background-color: #eff6ff; }
+        .bg-blue-60 { background-color: #d2d7df; }
+        .bg-blue-70 { background-color: #b5bac0; }
+        .bg-blue-80 { background-color: #999da2; }
+        .bg-blue-90 { background-color: #7e8185; }
+        .bg-blue-100 { background-color: #dcebfe; }
+        .bg-blue-110 { background-color: #c1cede; }
+        .bg-blue-120 { background-color: #a6b1bf; }
+        .bg-blue-130 { background-color: #8d96a2; }
+        .bg-blue-140 { background-color: #747b85; }
+        .bg-blue-150 { background-color: #5c6269; }
+        .bg-blue-200 { background-color: #bedbfe; }
+        .bg-blue-210 { background-color: #a7c0de; }
+        .bg-blue-220 { background-color: #90a6bf; }
+        .bg-blue-230 { background-color: #7a8ca2; }
+        .bg-blue-240 { background-color: #657385; }
+        .bg-blue-250 { background-color: #515b69; }
+        .bg-blue-300 { background-color: #91c3fd; }
+        .bg-blue-310 { background-color: #80abdd; }
+        .bg-blue-320 { background-color: #7094bf; }
+        .bg-blue-330 { background-color: #5f7da1; }
+        .bg-blue-340 { background-color: #506784; }
+        .bg-blue-350 { background-color: #405268; }
+        .bg-blue-400 { background-color: #61a6fa; }
+        .bg-blue-410 { background-color: #5792db; }
+        .bg-blue-420 { background-color: #4d7ebd; }
+        .bg-blue-430 { background-color: #446b9f; }
+        .bg-blue-440 { background-color: #3a5983; }
+        .bg-blue-450 { background-color: #304767; }
+        .bg-blue-500 { background-color: #3c83f6; }
+        .bg-blue-510 { background-color: #3974d7; }
+        .bg-blue-520 { background-color: #3564ba; }
+        .bg-blue-530 { background-color: #30569d; }
+        .bg-blue-540 { background-color: #2b4781; }
+        .bg-blue-550 { background-color: #263a66; }
+        .bg-blue-600 { background-color: #2463eb; }
+        .bg-blue-610 { background-color: #2658ce; }
+        .bg-blue-620 { background-color: #274db2; }
+        .bg-blue-630 { background-color: #264296; }
+        .bg-blue-640 { background-color: #24377c; }
+        .bg-blue-650 { background-color: #202d62; }
+        .bg-blue-700 { background-color: #1d4fd7; }
+        .bg-blue-710 { background-color: #2146bd; }
+        .bg-blue-720 { background-color: #223ea3; }
+        .bg-blue-730 { background-color: #22358a; }
+        .bg-blue-740 { background-color: #212d72; }
+        .bg-blue-750 { background-color: #1e255a; }
+        .bg-blue-800 { background-color: #1e3fae; }
+        .bg-blue-810 { background-color: #203899; }
+        .bg-blue-820 { background-color: #203285; }
+        .bg-blue-830 { background-color: #1f2b71; }
+        .bg-blue-840 { background-color: #1d255d; }
+        .bg-blue-850 { background-color: #2a2269; }
+        .bg-blue-900 { background-color: #1e3b8a; }
+        .bg-blue-910 { background-color: #1e357a; }
+        .bg-blue-920 { background-color: #1d2f6a; }
+        .bg-blue-930 { background-color: #1c295a; }
+        .bg-blue-940 { background-color: #1a234b; }
+        .bg-blue-950 { background-color: #172554; }
+        .bg-blue-960 { background-color: #17224b; }
+        .bg-blue-970 { background-color: #121428; }
+        .bg-blue-980 { background-color: #101020; }
+        .bg-blue-990 { background-color: #0b0c18; }
+        .bg-blue-1000 { background-color: #06060e; }
     </style>
+    
+    
     
     
     
@@ -52,248 +84,457 @@
 </head>
 <body class="bg-gray-100">
     <div class="container mx-auto py-8">
-        <h1 class="text-2xl font-bold mb-4">Blue Color Palette</h1>
+        <h1 class="text-2xl font-bold mb-4">blue Color Palette</h1>
         <div class="grid grid-cols-5 gap-4">
 
-            <div class="bg-blue-10 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-blue-50 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-10 border border-gray-300"></div>
-                    <p>Blue 10</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-50 border border-gray-300"></div>
+                    <p>blue 50</p>
                 </div>
             </div>
 
-            <div class="bg-blue-40 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-blue-60 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-40 border border-gray-300"></div>
-                    <p>Blue 40</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-60 border border-gray-300"></div>
+                    <p>blue 60</p>
                 </div>
             </div>
 
             <div class="bg-blue-70 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-70 border border-gray-300"></div>
-                    <p>Blue 70</p>
+                    <p>blue 70</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-80 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-80 border border-gray-300"></div>
+                    <p>blue 80</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-90 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-90 border border-gray-300"></div>
+                    <p>blue 90</p>
                 </div>
             </div>
 
             <div class="bg-blue-100 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-100 border border-gray-300"></div>
-                    <p>Blue 100</p>
+                    <p>blue 100</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-110 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-110 border border-gray-300"></div>
+                    <p>blue 110</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-120 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-120 border border-gray-300"></div>
+                    <p>blue 120</p>
                 </div>
             </div>
 
             <div class="bg-blue-130 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-130 border border-gray-300"></div>
-                    <p>Blue 130</p>
+                    <p>blue 130</p>
                 </div>
             </div>
 
-            <div class="bg-blue-160 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-blue-140 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-160 border border-gray-300"></div>
-                    <p>Blue 160</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-140 border border-gray-300"></div>
+                    <p>blue 140</p>
                 </div>
             </div>
 
-            <div class="bg-blue-190 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-blue-150 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-190 border border-gray-300"></div>
-                    <p>Blue 190</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-150 border border-gray-300"></div>
+                    <p>blue 150</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-200 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-200 border border-gray-300"></div>
+                    <p>blue 200</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-210 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-210 border border-gray-300"></div>
+                    <p>blue 210</p>
                 </div>
             </div>
 
             <div class="bg-blue-220 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-220 border border-gray-300"></div>
-                    <p>Blue 220</p>
+                    <p>blue 220</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-230 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-230 border border-gray-300"></div>
+                    <p>blue 230</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-240 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-240 border border-gray-300"></div>
+                    <p>blue 240</p>
                 </div>
             </div>
 
             <div class="bg-blue-250 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-250 border border-gray-300"></div>
-                    <p>Blue 250</p>
+                    <p>blue 250</p>
                 </div>
             </div>
 
-            <div class="bg-blue-280 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-blue-300 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-280 border border-gray-300"></div>
-                    <p>Blue 280</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-310 border border-gray-300"></div>
+                    <p>blue 300</p>
                 </div>
             </div>
 
             <div class="bg-blue-310 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-310 border border-gray-300"></div>
-                    <p>Blue 310</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-340 border border-gray-300"></div>
+                    <p>blue 310</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-320 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-370 border border-gray-300"></div>
+                    <p>blue 320</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-330 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-400 border border-gray-300"></div>
+                    <p>blue 330</p>
                 </div>
             </div>
 
             <div class="bg-blue-340 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-340 border border-gray-300"></div>
-                    <p>Blue 340</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-430 border border-gray-300"></div>
+                    <p>blue 340</p>
                 </div>
             </div>
 
-            <div class="bg-blue-370 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-blue-350 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-370 border border-gray-300"></div>
-                    <p>Blue 370</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-460 border border-gray-300"></div>
+                    <p>blue 350</p>
                 </div>
             </div>
 
             <div class="bg-blue-400 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-400 border border-gray-300"></div>
-                    <p>Blue 400</p>
+                    <p>blue 400</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-410 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-430 border border-gray-300"></div>
+                    <p>blue 410</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-420 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-460 border border-gray-300"></div>
+                    <p>blue 420</p>
                 </div>
             </div>
 
             <div class="bg-blue-430 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-430 border border-gray-300"></div>
-                    <p>Blue 430</p>
-                </div>
-            </div>
-
-            <div class="bg-blue-460 h-24 flex items-center justify-center text-xs text-gray-800">
-                <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-460 border border-gray-300"></div>
-                    <p>Blue 460</p>
-                </div>
-            </div>
-
-            <div class="bg-blue-490 h-24 flex items-center justify-center text-xs text-gray-800">
-                <div>
                     <div class="w-16 h-16 mb-2 bg-blue-490 border border-gray-300"></div>
-                    <p>Blue 490</p>
+                    <p>blue 430</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-440 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-520 border border-gray-300"></div>
+                    <p>blue 440</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-450 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-550 border border-gray-300"></div>
+                    <p>blue 450</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-500 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-520 border border-gray-300"></div>
+                    <p>blue 500</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-510 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-510 border border-gray-300"></div>
+                    <p>blue 510</p>
                 </div>
             </div>
 
             <div class="bg-blue-520 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-520 border border-gray-300"></div>
-                    <p>Blue 520</p>
+                    <p>blue 520</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-530 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-530 border border-gray-300"></div>
+                    <p>blue 530</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-540 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-540 border border-gray-300"></div>
+                    <p>blue 540</p>
                 </div>
             </div>
 
             <div class="bg-blue-550 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-550 border border-gray-300"></div>
-                    <p>Blue 550</p>
+                    <p>blue 550</p>
                 </div>
             </div>
 
-            <div class="bg-blue-580 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-blue-600 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-580 border border-gray-300"></div>
-                    <p>Blue 580</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-610 border border-gray-300"></div>
+                    <p>blue 600</p>
                 </div>
             </div>
 
             <div class="bg-blue-610 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-610 border border-gray-300"></div>
-                    <p>Blue 610</p>
+                    <p>blue 610</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-620 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-620 border border-gray-300"></div>
+                    <p>blue 620</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-630 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-630 border border-gray-300"></div>
+                    <p>blue 630</p>
                 </div>
             </div>
 
             <div class="bg-blue-640 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-640 border border-gray-300"></div>
-                    <p>Blue 640</p>
+                    <p>blue 640</p>
                 </div>
             </div>
 
-            <div class="bg-blue-670 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-blue-650 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-670 border border-gray-300"></div>
-                    <p>Blue 670</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-650 border border-gray-300"></div>
+                    <p>blue 650</p>
                 </div>
             </div>
 
             <div class="bg-blue-700 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-700 border border-gray-300"></div>
-                    <p>Blue 700</p>
+                    <p>blue 700</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-710 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-710 border border-gray-300"></div>
+                    <p>blue 710</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-720 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-720 border border-gray-300"></div>
+                    <p>blue 720</p>
                 </div>
             </div>
 
             <div class="bg-blue-730 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-730 border border-gray-300"></div>
-                    <p>Blue 730</p>
+                    <p>blue 730</p>
                 </div>
             </div>
 
-            <div class="bg-blue-760 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-blue-740 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-760 border border-gray-300"></div>
-                    <p>Blue 760</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-740 border border-gray-300"></div>
+                    <p>blue 740</p>
                 </div>
             </div>
 
-            <div class="bg-blue-790 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-blue-750 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-790 border border-gray-300"></div>
-                    <p>Blue 790</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-750 border border-gray-300"></div>
+                    <p>blue 750</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-800 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-820 border border-gray-300"></div>
+                    <p>blue 800</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-810 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-810 border border-gray-300"></div>
+                    <p>blue 810</p>
                 </div>
             </div>
 
             <div class="bg-blue-820 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-820 border border-gray-300"></div>
-                    <p>Blue 820</p>
+                    <p>blue 820</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-830 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-830 border border-gray-300"></div>
+                    <p>blue 830</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-840 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-840 border border-gray-300"></div>
+                    <p>blue 840</p>
                 </div>
             </div>
 
             <div class="bg-blue-850 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-850 border border-gray-300"></div>
-                    <p>Blue 850</p>
+                    <p>blue 850</p>
                 </div>
             </div>
 
-            <div class="bg-blue-880 h-24 flex items-center justify-center text-xs text-gray-800">
+            <div class="bg-blue-900 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-880 border border-gray-300"></div>
-                    <p>Blue 880</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-910 border border-gray-300"></div>
+                    <p>blue 900</p>
                 </div>
             </div>
 
             <div class="bg-blue-910 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-910 border border-gray-300"></div>
-                    <p>Blue 910</p>
+                    <p>blue 910</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-920 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-920 border border-gray-300"></div>
+                    <p>blue 920</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-930 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-930 border border-gray-300"></div>
+                    <p>blue 930</p>
                 </div>
             </div>
 
             <div class="bg-blue-940 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-940 border border-gray-300"></div>
-                    <p>Blue 940</p>
+                    <p>blue 940</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-950 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-950 border border-gray-300"></div>
+                    <p>blue 950</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-960 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-960 border border-gray-300"></div>
+                    <p>blue 960</p>
                 </div>
             </div>
 
             <div class="bg-blue-970 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
                     <div class="w-16 h-16 mb-2 bg-blue-970 border border-gray-300"></div>
-                    <p>Blue 970</p>
+                    <p>blue 970</p>
                 </div>
             </div>
 
+            <div class="bg-blue-980 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-980 border border-gray-300"></div>
+                    <p>blue 980</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-990 h-24 flex items-center justify-center text-xs text-gray-800">
+                <div>
+                    <div class="w-16 h-16 mb-2 bg-blue-990 border border-gray-300"></div>
+                    <p>blue 990</p>
+                </div>
+            </div>
 
             <div class="bg-blue-1000 h-24 flex items-center justify-center text-xs text-gray-800">
                 <div>
-                    <div class="w-16 h-16 mb-2 bg-blue-990 border border-gray-300"></div>
-                    <p>Blue 1000</p>
+                    <div class="w-16 h-16 mb-2 bg-blue-1000 border border-gray-300"></div>
+                    <p>blue 1000</p>
                 </div>
             </div>
-        </div>
+
     </div>
 </body>
 </html>

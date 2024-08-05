@@ -1,26 +1,26 @@
 /* Botones */
 @layer components{
-    .btn{
+    .btn-jd{
         @apply px-4 py-2 rounded shadow focus:shadow-md focus:outline-none transition
     }
 
-    .btn-primary{
+    .btn-jd-primary{
         @apply text-white bg-blue-500 hover:bg-blue-600 ring-blue-300 focus:ring
     }
 
-    .btn-secondary{
+    .btn-jd-secondary{
         @apply text-white bg-gray-500 hover:bg-gray-600 ring-gray-300 focus:ring
     }
 
-    .btn-succes{
+    .btn-jd-succes{
         @apply text-white bg-green-500 hover:bg-green-600 ring-green-300 focus:ring
     }
 
-    .btn-warning{
+    .btn-jd-warning{
         @apply text-white bg-yellow-500 hover:bg-yellow-600 ring-yellow-300 focus:ring
     }
 
-    .btn-danger{
+    .btn-jd-danger{
         @apply text-white bg-red-500 hover:bg-red-600 ring-red-300 focus:ring
     }
 
